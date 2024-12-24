@@ -52,8 +52,8 @@ func TestDiffer(t *testing.T) {
 
 	}
 
-	types := BuildTypeRepresentations(bigSet, DefaultRenamer)
-	writeJson("types.json", types.types)
+	types := buildTypeRepresentations(bigSet)
+	writeJson("types.json", types)
 }
 
 func TestBuildTypes(t *testing.T) {
@@ -80,7 +80,7 @@ func TestBuildTypes(t *testing.T) {
 		},
 	}
 
-	output := BuildTypeRepresentations(testSets, DefaultRenamer)
+	output := buildTypeRepresentations(testSets)
 	writeJson("built types.json", output)
 
 }

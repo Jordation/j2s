@@ -37,7 +37,7 @@ type setW struct {
 	set        set
 }
 
-func NewSetWrapper(set set, name, parentPath string) *setW {
+func newSetWrapper(set set, name, parentPath string) *setW {
 	setw := &setW{
 		set:        set,
 		ParentPath: parentPath,
@@ -139,15 +139,15 @@ func mergeSets(s1, s2 *setW) {
 }
 
 type valueType struct {
-	base      rawValueType
-	sub       rawValueType
+	base      valueTypePart
+	sub       valueTypePart
 	typedName string
 }
 
-type rawValueType int8
+type valueTypePart int8
 
 const (
-	vt_unknown rawValueType = iota
+	vt_unknown valueTypePart = iota
 
 	vt_string
 	vt_number
@@ -190,7 +190,7 @@ func (vt *valueType) String() string {
 	return "unknown"
 }
 
-func jsonValueType(val any) (rawValueType, rawValueType, error) {
+func jsonValueType(val any) (valueTypePart, valueTypePart, error) {
 	switch data := val.(type) {
 	case string:
 		return vt_string, 0, nil

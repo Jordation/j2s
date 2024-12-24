@@ -11,10 +11,6 @@ type jsonTranslator struct {
 	original map[string]any
 }
 
-type translateResult struct {
-	Sets map[string][]*setW
-}
-
 func NewTranslator(rootName string, jsonData io.Reader) *jsonTranslator {
 	return &jsonTranslator{
 		RootName: rootName,
@@ -22,7 +18,7 @@ func NewTranslator(rootName string, jsonData io.Reader) *jsonTranslator {
 	}
 }
 
-func (jt *jsonTranslator) Translate() (*translateResult, error) {
+func (jt *jsonTranslator) Translate() (map[string][]*setW, error) {
 	model := make(map[string]any)
 	if err := json.NewDecoder(jt.Data).Decode(&model); err != nil {
 		return nil, err
@@ -33,15 +29,14 @@ func (jt *jsonTranslator) Translate() (*translateResult, error) {
 	return jt.translate(model)
 }
 
-func (jt *jsonTranslator) translate(model map[string]any) (*translateResult, error) {
+func (jt *jsonTranslator) translate(model map[string]any) (map[string][]*setW, error) {
 	var (
-		sets   = make(map[string][]*setW)
-		result = &translateResult{Sets: sets}
+		sets = make(map[string][]*setW)
 	)
 
 	jt.buildKeySets("", jt.RootName, model, sets)
 
-	return result, nil
+	return sets, nil
 }
 
 func (jt *jsonTranslator) buildKeySets(
@@ -90,6 +85,6 @@ func (jt *jsonTranslator) buildKeySets(
 		}
 	}
 
-	setOfChildren := NewSetWrapper(thisSet, currKey, pathTo)
+	setOfChildren := newSetWrapper(thisSet, currKey, pathTo)
 	setsByField[currKey] = append(setsByField[currKey], setOfChildren)
 }
