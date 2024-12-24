@@ -9,7 +9,7 @@ import (
 )
 
 func TestDiffer(t *testing.T) {
-	base := "./sample_files/ships/ship-%d.json"
+	base := "./testdata/ships/ship-%d.json"
 	bigSet := map[string][]*setW{}
 	dupes := map[string][]*setW{}
 	deduped := map[string][]*setW{}
@@ -47,18 +47,13 @@ func TestDiffer(t *testing.T) {
 		if sample.AllEq(sets[1:]...) {
 			deduped[k] = []*setW{sample}
 		} else {
-			dupes[k] = append(dupes[k], Reduce(sets)...)
+			dupes[k] = append(dupes[k], reduce(sets)...)
 		}
 
 	}
 
-	writeJson("raw.json", bigSet)
-	writeJson("dupes.json", dupes)
-	writeJson("deduped.json", deduped)
-
-	types := BuildTypeRepresentations(bigSet)
-	writeJson("types.json", types)
-
+	types := BuildTypeRepresentations(bigSet, DefaultRenamer)
+	writeJson("types.json", types.types)
 }
 
 func TestBuildTypes(t *testing.T) {
@@ -85,7 +80,7 @@ func TestBuildTypes(t *testing.T) {
 		},
 	}
 
-	output := BuildTypeRepresentations(testSets)
+	output := BuildTypeRepresentations(testSets, DefaultRenamer)
 	writeJson("built types.json", output)
 
 }

@@ -61,7 +61,7 @@ func (sw *setW) MarshalJSON() ([]byte, error) {
 	return combined, nil
 }
 
-func Reduce(sets []*setW) []*setW {
+func reduce(sets []*setW) []*setW {
 	hashToSet := map[string]*setW{}
 
 	for _, set := range sets {
@@ -71,7 +71,7 @@ func Reduce(sets []*setW) []*setW {
 	return maps.Values(hashToSet)
 }
 
-func Classify(base, classifiee *setW) setClassficiation {
+func classify(base, classifiee *setW) setClassficiation {
 	// if they live at the same path and have the same name, assume they are at least merge-worthy
 	bs := strings.Split(base.ParentPath, ".")
 	cs := strings.Split(classifiee.ParentPath, ".")
@@ -132,7 +132,7 @@ func (s1 *setW) Eq(s2 *setW) bool {
 	return s1.Hash == s2.Hash
 }
 
-func MergeSets(s1, s2 *setW) {
+func mergeSets(s1, s2 *setW) {
 
 	maps.Copy(s1.set, s2.set)
 	maps.Copy(s2.set, s1.set)

@@ -1,17 +1,54 @@
 package j2s
 
 import (
+	"fmt"
+	"io"
 	"strings"
 )
+
+type TypeWriter struct {
+	types           []*typeRepr
+	nameTransformer func(string) string
+	typeTransformer func(*valueType, func(string) string) string
+}
 
 type typeRepr struct {
 	Name   string
 	Fields map[string]*valueType
 }
 
-func BuildTypeRepresentations(types map[string][]*setW) []*typeRepr {
-	outputSets := make(map[string]*setW, len(types))
+func (r *TypeWriter) WriteTo(w io.Writer) (int64, error) {
+	w.Write([]byte("package j2s\n\n"))
+	for _, t := range r.types {
+		b, _ := t.toGoStruct(r.nameTransformer)
+		if _, err := w.Write(b); err != nil {
+			return 0, err
+		}
+	}
 
+	return 0, nil
+}
+
+func (tr *typeRepr) toGoStruct(renamer func(string) string) ([]byte, error) {
+	b := strings.Builder{}
+
+	b.WriteString(fmt.Sprintf("type %s struct {\n", renamer(tr.Name)))
+	for fieldName, fieldType := range tr.Fields {
+		b.WriteString(fmt.Sprintf("%s %s `json:\"%s\"`\n", renamer(fieldName), ToGoType(fieldType, renamer), fieldName))
+	}
+
+	b.WriteString("}\n")
+
+	return []byte(b.String()), nil
+}
+
+func BuildTypeRepresentations(types map[string][]*setW, renamerFunc func(string) string) *TypeWriter {
+	result := &TypeWriter{
+		nameTransformer: renamerFunc,
+		typeTransformer: ToGoType,
+	}
+
+	outputSets := make(map[string]*setW, len(types))
 	for typeName, fieldSets := range types {
 		cont := true
 		for cont {
@@ -22,15 +59,16 @@ func BuildTypeRepresentations(types map[string][]*setW) []*typeRepr {
 		}
 	}
 
-	out := make([]*typeRepr, 0, len(outputSets))
+	typeReprs := make([]*typeRepr, 0, len(outputSets))
 	for name, set := range outputSets {
-		out = append(out, &typeRepr{
+		typeReprs = append(typeReprs, &typeRepr{
 			Name:   name,
 			Fields: set.set,
 		})
 	}
 
-	return out
+	result.types = typeReprs
+	return result
 }
 
 func collapse(dst map[string]*setW, typeName string, sets []*setW) ([]*setW, bool) {
@@ -58,7 +96,7 @@ func collapse(dst map[string]*setW, typeName string, sets []*setW) ([]*setW, boo
 	if ok {
 		target.Name, existing.Name = handleNamingConflict(existing, target)
 		if target.Name == existing.Name {
-			MergeSets(existing, target)
+			mergeSets(existing, target)
 		}
 	}
 
@@ -86,11 +124,11 @@ func handleNamingConflict(s1, s2 *setW) (string, string) {
 }
 
 func handleMerge(s1, s2 *setW) *setW {
-	switch Classify(s1, s2) {
+	switch classify(s1, s2) {
 	case sc_NotEq:
 		return nil
 	case sc_Sub, sc_Partial:
-		MergeSets(s1, s2)
+		mergeSets(s1, s2)
 		ensureBestTypes(s1.set, s1.set)
 	case sc_Eq:
 		ensureBestTypes(s1.set, s1.set)
@@ -130,4 +168,54 @@ func bestType(vt1, vt2 *valueType) *valueType {
 	}
 
 	return nil
+}
+
+func DefaultRenamer(in string) string {
+	words := strings.Split(in, "_")
+	for i, word := range words {
+		words[i] = capitalise(word)
+	}
+
+	return strings.Join(words, "")
+}
+
+func capitalise(word string) string {
+	if len(word) > 0 {
+		return strings.ToUpper(string(word[0])) + word[1:]
+	}
+	return ""
+}
+
+func ToGoType(vt *valueType, nameTransformer func(string) string) string {
+	switch vt.base {
+	default:
+		panic("unknown type repr " + vt.String())
+	case vt_string:
+		return "string"
+	case vt_number:
+		return "float64"
+	case vt_bool:
+		return "bool"
+	case vt_null:
+		return "any"
+	case vt_object:
+		return nameTransformer(vt.typedName)
+
+	case vt_array:
+		switch vt.sub {
+		default:
+			panic("unknown type repr " + vt.String())
+		case vt_string:
+			return "[]string"
+		case vt_number:
+			return "[]float64"
+		case vt_bool:
+			return "[]bool"
+		case vt_null, vt_unknown:
+			return "[]any"
+		case vt_object:
+			return "[]*" + nameTransformer(vt.typedName)
+		}
+
+	}
 }
