@@ -1,0 +1,296 @@
+{
+    "data": {
+        "uuid": "aaeb976b-7a79-4a9c-91ee-07ed05d4a399",
+        "name": "Anvil Ballista Snowblind",
+        "slug": "anvil-ballista-snowblind",
+        "class_name": "ANVL_Ballista_Snowblind",
+        "sizes": {
+            "length": 17,
+            "beam": 7,
+            "height": 5.5
+        },
+        "emission": {
+            "ir": 1790,
+            "em_idle": 3308,
+            "em_max": 16174
+        },
+        "mass": 121816,
+        "cargo_capacity": 0,
+        "vehicle_inventory": 2.11,
+        "personal_inventory": 0,
+        "crew": {
+            "min": 2,
+            "max": null,
+            "weapon": 2,
+            "operation": null
+        },
+        "health": 37800,
+        "shield_hp": 1090,
+        "speed": {
+            "scm": null,
+            "max": 25,
+            "zero_to_scm": 0,
+            "zero_to_max": 3.57,
+            "scm_to_zero": 0,
+            "max_to_zero": 25,
+            "reverse": 10
+        },
+        "fuel": {
+            "capacity": 0,
+            "intake_rate": 0,
+            "usage": {
+                "main": 0,
+                "maneuvering": 0,
+                "retro": 0,
+                "vtol": 0
+            }
+        },
+        "agility": {
+            "pitch": null,
+            "yaw": null,
+            "roll": null,
+            "v0_steer_max": 20,
+            "kv_steer_max": 5,
+            "vmax_steer_max": 15,
+            "deceleration": {
+                "main": 1
+            },
+            "acceleration": {
+                "main": 7,
+                "retro": 0,
+                "vtol": 0,
+                "maneuvering": 0,
+                "main_g": 0,
+                "retro_g": 0,
+                "vtol_g": 0,
+                "maneuvering_g": 0
+            }
+        },
+        "armor": {
+            "signal_infrared": 1,
+            "signal_electromagnetic": 1,
+            "signal_cross_section": 1,
+            "damage_physical": 0.46,
+            "damage_energy": 1,
+            "damage_distortion": 1,
+            "damage_thermal": 1,
+            "damage_biochemical": 1,
+            "damage_stun": 0
+        },
+        "foci": [
+            "Military"
+        ],
+        "type": "combat",
+        "description": "Keep your airspace clear of danger with the Anvil Ballista. Originally designed to defend outposts from Vanduul attacks, this mobile missile defense system packs a powerful loadout, allowing the Ballista to stand firm against any threat, whether it arrives by air or land. The Snowblind variant comes in a grey camouflage pattern to keep it concealed against rocky or lunar terrain.",
+        "size_class": 4,
+        "manufacturer": {
+            "name": "Anvil Aerospace",
+            "code": "ANVL"
+        },
+        "insurance": {
+            "claim_time": 6.19,
+            "expedite_time": 2.059,
+            "expedite_cost": 8073
+        },
+        "shops": [],
+        "parts": [
+            {
+                "name": "ANVL_Ballista",
+                "display_name": "Anvl ballista",
+                "damage_max": 4200,
+                "children": [
+                    {
+                        "name": "nose",
+                        "display_name": "Nose",
+                        "damage_max": 10000,
+                        "children": []
+                    },
+                    {
+                        "name": "body",
+                        "display_name": "Body",
+                        "damage_max": 10000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_wheel_front_left01",
+                        "display_name": "Hardpoint wheel 01 (front left)",
+                        "damage_max": 1700,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_wheel_front_left02",
+                        "display_name": "Hardpoint wheel 02 (front left)",
+                        "damage_max": 1700,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_wheel_front_right01",
+                        "display_name": "Hardpoint wheel 01 (front right)",
+                        "damage_max": 1700,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_wheel_front_right02",
+                        "display_name": "Hardpoint wheel 02 (front right)",
+                        "damage_max": 1700,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_wheel_back_left01",
+                        "display_name": "Hardpoint wheel 01 (back left)",
+                        "damage_max": 1700,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_wheel_back_left02",
+                        "display_name": "Hardpoint wheel 02 (back left)",
+                        "damage_max": 1700,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_wheel_back_right01",
+                        "display_name": "Hardpoint wheel 01 (back right)",
+                        "damage_max": 1700,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_wheel_back_right02",
+                        "display_name": "Hardpoint wheel 02 (back right)",
+                        "damage_max": 1700,
+                        "children": []
+                    }
+                ]
+            }
+        ],
+        "updated_at": "2024-05-01T18:56:51.000000Z",
+        "version": "3.24.3-LIVE.9423704",
+        "id": 184,
+        "chassis_id": 75,
+        "production_status": "flight-ready",
+        "production_note": "None",
+        "size": "vehicle",
+        "msrp": 140,
+        "pledge_url": "https:\/\/robertsspaceindustries.com\/pledge\/ships\/anvil-ballista\/Anvil-Ballista-Snowblind",
+        "components": [
+            {
+                "type": "fuel_tanks",
+                "name": "Fuel Tank",
+                "mounts": 1,
+                "component_size": "V",
+                "category": "",
+                "size": "V",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "radar",
+                "name": "Radar",
+                "mounts": 2,
+                "component_size": "V",
+                "category": "",
+                "size": "V",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "computers",
+                "name": "Computer",
+                "mounts": 1,
+                "component_size": "V",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "power_plants",
+                "name": "Power Plant",
+                "mounts": 1,
+                "component_size": "V",
+                "category": "",
+                "size": "V",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "coolers",
+                "name": "Cooler",
+                "mounts": 1,
+                "component_size": "V",
+                "category": "",
+                "size": "V",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "shield_generators",
+                "name": "Shield Generator",
+                "mounts": 2,
+                "component_size": "V",
+                "category": "",
+                "size": "V",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "turrets",
+                "name": "S2 Weapon",
+                "mounts": 1,
+                "component_size": "2",
+                "category": "",
+                "size": "2",
+                "details": "",
+                "quantity": 2,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "missiles",
+                "name": "S7 Missiles",
+                "mounts": 2,
+                "component_size": "7",
+                "category": "",
+                "size": "7",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "missiles",
+                "name": "S5 Missiles",
+                "mounts": 2,
+                "component_size": "5",
+                "category": "",
+                "size": "5",
+                "details": "",
+                "quantity": 4,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            }
+        ],
+        "loaner": [],
+        "skus": []
+    },
+    "meta": {
+        "processed_at": "2024-12-24 01:52:11",
+        "valid_relations": [
+            "shops",
+            "parts",
+            "hardpoints",
+            "components"
+        ]
+    }
+}

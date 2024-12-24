@@ -1,0 +1,549 @@
+{
+    "data": {
+        "uuid": "eaeb562d-d4ac-43bd-a843-e8a6d69fad82",
+        "name": "Arrow",
+        "slug": "arrow",
+        "class_name": "ANVL_Arrow",
+        "sizes": {
+            "length": 17.25,
+            "beam": 12.25,
+            "height": 4.5
+        },
+        "emission": {
+            "ir": 6050,
+            "em_idle": 5043,
+            "em_max": 20385
+        },
+        "mass": 32310,
+        "cargo_capacity": 0,
+        "vehicle_inventory": 0.86,
+        "personal_inventory": 0,
+        "crew": {
+            "min": 1,
+            "max": null,
+            "weapon": 0,
+            "operation": null
+        },
+        "health": 8680,
+        "shield_hp": 1730,
+        "speed": {
+            "scm": 232,
+            "max": 1210,
+            "zero_to_scm": 1.703,
+            "zero_to_max": 8.885,
+            "scm_to_zero": 4.899,
+            "max_to_zero": 25.552
+        },
+        "fuel": {
+            "capacity": 75000,
+            "intake_rate": 0,
+            "usage": {
+                "main": 29,
+                "maneuvering": 11,
+                "retro": 10,
+                "vtol": 0
+            }
+        },
+        "quantum": {
+            "quantum_speed": 165000000,
+            "quantum_spool_time": 4,
+            "quantum_fuel_capacity": 670.8295,
+            "quantum_range": 36027363050.48335
+        },
+        "agility": {
+            "pitch": 74,
+            "yaw": 55,
+            "roll": 189,
+            "acceleration": {
+                "main": 136.18,
+                "retro": 47.353,
+                "vtol": 0,
+                "maneuvering": 107.706,
+                "main_g": 13.886,
+                "retro_g": 4.828,
+                "vtol_g": 0,
+                "maneuvering_g": 10.983
+            }
+        },
+        "armor": {
+            "signal_infrared": 1,
+            "signal_electromagnetic": 1,
+            "signal_cross_section": 1,
+            "damage_physical": 0.46,
+            "damage_energy": 1,
+            "damage_distortion": 1,
+            "damage_thermal": 1,
+            "damage_biochemical": 1,
+            "damage_stun": 0
+        },
+        "foci": [
+            "Light Fighter"
+        ],
+        "type": "combat",
+        "description": "Meet Anvil's \u2018light fighter of the future\u2019. Featuring an ultra-aerodynamic frame, slight profile, and the most advanced manoeuvring thruster tech available, it\u2019s the most agile ship in its class. It can also hold its own in a knock-down-drag-out thanks to a generous standard weapons package that includes quad missile racks and a full complement of countermeasures. The Arrow is designed specifically to leave would-be interlopers thoroughly bewildered. After all, how can they kill what they can't catch?",
+        "size_class": 2,
+        "manufacturer": {
+            "name": "Anvil Aerospace",
+            "code": "ANVL"
+        },
+        "insurance": {
+            "claim_time": 5.269,
+            "expedite_time": 1.759,
+            "expedite_cost": 3121
+        },
+        "shops": [
+            {
+                "uuid": "f7b1f854-25f3-496c-9934-4776a34b1afd",
+                "name_raw": "Astro Armada, Area 18",
+                "name": "Astro Armada",
+                "position": "Area 18",
+                "profit_margin": 50,
+                "link": "https:\/\/api.star-citizen.wiki\/api\/v2\/shops\/f7b1f854-25f3-496c-9934-4776a34b1afd",
+                "version": "3.19.1-LIVE.8526421",
+                "items": [
+                    {
+                        "uuid": "eaeb562d-d4ac-43bd-a843-e8a6d69fad82",
+                        "name": "Anvil Arrow",
+                        "type": "Vehicle",
+                        "sub_type": "Vehicle_Spaceship",
+                        "base_price": 972300,
+                        "price_calculated": 972300,
+                        "price_range": {
+                            "min": 972300,
+                            "max": 972300
+                        },
+                        "base_price_offset": 0,
+                        "max_discount": 0,
+                        "max_premium": 0,
+                        "inventory": 100,
+                        "optimal_inventory": 100,
+                        "max_inventory": 100,
+                        "auto_restock": true,
+                        "auto_consume": false,
+                        "refresh_rate": 1,
+                        "buyable": true,
+                        "sellable": false,
+                        "rentable": false,
+                        "version": "3.19.1-LIVE.8526421"
+                    }
+                ]
+            },
+            {
+                "uuid": "7add4924-7738-4d43-ac0d-f9310fccd73c",
+                "name_raw": "Traveler Rentals, Area 18",
+                "name": "Traveler Rentals",
+                "position": "Area 18",
+                "profit_margin": 0,
+                "link": "https:\/\/api.star-citizen.wiki\/api\/v2\/shops\/7add4924-7738-4d43-ac0d-f9310fccd73c",
+                "version": "3.19.1-LIVE.8526421",
+                "items": [
+                    {
+                        "uuid": "eaeb562d-d4ac-43bd-a843-e8a6d69fad82",
+                        "name": "Anvil Arrow",
+                        "type": "Vehicle",
+                        "sub_type": "Vehicle_Spaceship",
+                        "base_price": 972300,
+                        "price_calculated": 972300,
+                        "price_range": {
+                            "min": 972300,
+                            "max": 972300
+                        },
+                        "base_price_offset": 0,
+                        "max_discount": 0,
+                        "max_premium": 0,
+                        "inventory": 50,
+                        "optimal_inventory": 50,
+                        "max_inventory": 50,
+                        "auto_restock": true,
+                        "auto_consume": false,
+                        "refresh_rate": 1,
+                        "buyable": false,
+                        "sellable": false,
+                        "rentable": true,
+                        "rental_price_days": {
+                            "duration_1": 19446,
+                            "duration_3": 51046,
+                            "duration_7": 102092,
+                            "duration_30": 364613
+                        },
+                        "rental_percent_days": {
+                            "duration_1": 2,
+                            "duration_3": 1.75,
+                            "duration_7": 1.5,
+                            "duration_30": 1.25
+                        },
+                        "version": "3.19.1-LIVE.8526421"
+                    }
+                ]
+            },
+            {
+                "uuid": "f0e04a61-8d23-4ed4-9b2f-2fa3cf6aa3e6",
+                "name_raw": "Traveler Rentals, Orison",
+                "name": "Traveler Rentals",
+                "position": "Orison",
+                "profit_margin": 50,
+                "link": "https:\/\/api.star-citizen.wiki\/api\/v2\/shops\/f0e04a61-8d23-4ed4-9b2f-2fa3cf6aa3e6",
+                "version": "3.19.1-LIVE.8526421",
+                "items": [
+                    {
+                        "uuid": "eaeb562d-d4ac-43bd-a843-e8a6d69fad82",
+                        "name": "Anvil Arrow",
+                        "type": "Vehicle",
+                        "sub_type": "Vehicle_Spaceship",
+                        "base_price": 972300,
+                        "price_calculated": 972300,
+                        "price_range": {
+                            "min": 972300,
+                            "max": 972300
+                        },
+                        "base_price_offset": 0,
+                        "max_discount": 0,
+                        "max_premium": 0,
+                        "inventory": 50,
+                        "optimal_inventory": 50,
+                        "max_inventory": 50,
+                        "auto_restock": true,
+                        "auto_consume": false,
+                        "refresh_rate": 1,
+                        "buyable": false,
+                        "sellable": false,
+                        "rentable": true,
+                        "rental_price_days": {
+                            "duration_1": 19446,
+                            "duration_3": 51046,
+                            "duration_7": 102092,
+                            "duration_30": 364613
+                        },
+                        "rental_percent_days": {
+                            "duration_1": 2,
+                            "duration_3": 1.75,
+                            "duration_7": 1.5,
+                            "duration_30": 1.25
+                        },
+                        "version": "3.19.1-LIVE.8526421"
+                    }
+                ]
+            },
+            {
+                "uuid": "6344deb5-e73b-4e1a-acb7-7e7571615467",
+                "name_raw": "Vantage Rentals, Lorville",
+                "name": "Vantage Rentals",
+                "position": "Lorville",
+                "profit_margin": 0,
+                "link": "https:\/\/api.star-citizen.wiki\/api\/v2\/shops\/6344deb5-e73b-4e1a-acb7-7e7571615467",
+                "version": "3.19.1-LIVE.8526421",
+                "items": [
+                    {
+                        "uuid": "eaeb562d-d4ac-43bd-a843-e8a6d69fad82",
+                        "name": "Anvil Arrow",
+                        "type": "Vehicle",
+                        "sub_type": "Vehicle_Spaceship",
+                        "base_price": 972300,
+                        "price_calculated": 972300,
+                        "price_range": {
+                            "min": 972300,
+                            "max": 972300
+                        },
+                        "base_price_offset": 0,
+                        "max_discount": 0,
+                        "max_premium": 0,
+                        "inventory": 50,
+                        "optimal_inventory": 50,
+                        "max_inventory": 50,
+                        "auto_restock": true,
+                        "auto_consume": false,
+                        "refresh_rate": 1,
+                        "buyable": false,
+                        "sellable": false,
+                        "rentable": true,
+                        "rental_price_days": {
+                            "duration_1": 19446,
+                            "duration_3": 51046,
+                            "duration_7": 102092,
+                            "duration_30": 364613
+                        },
+                        "rental_percent_days": {
+                            "duration_1": 2,
+                            "duration_3": 1.75,
+                            "duration_7": 1.5,
+                            "duration_30": 1.25
+                        },
+                        "version": "3.19.1-LIVE.8526421"
+                    }
+                ]
+            }
+        ],
+        "parts": [
+            {
+                "name": "nose",
+                "display_name": "Nose",
+                "damage_max": 2000,
+                "children": []
+            },
+            {
+                "name": "body",
+                "display_name": "Body",
+                "damage_max": 2000,
+                "children": [
+                    {
+                        "name": "wing_left",
+                        "display_name": "Wing (left)",
+                        "damage_max": 1500,
+                        "children": []
+                    },
+                    {
+                        "name": "wing_right",
+                        "display_name": "Wing (right)",
+                        "damage_max": 1500,
+                        "children": []
+                    },
+                    {
+                        "name": "stabilizer_left",
+                        "display_name": "Stabilizer (left)",
+                        "damage_max": 800,
+                        "children": []
+                    },
+                    {
+                        "name": "stabilizer_right",
+                        "display_name": "Stabilizer (right)",
+                        "damage_max": 800,
+                        "children": []
+                    }
+                ]
+            }
+        ],
+        "updated_at": "2024-05-11T09:37:38.000000Z",
+        "version": "3.24.3-LIVE.9423704",
+        "id": 173,
+        "chassis_id": 70,
+        "production_status": "flight-ready",
+        "production_note": "None",
+        "size": "small",
+        "msrp": 75,
+        "pledge_url": "https:\/\/robertsspaceindustries.com\/pledge\/ships\/anvil-arrow\/Arrow",
+        "components": [
+            {
+                "type": "main_thrusters",
+                "name": "Main Thruster",
+                "mounts": 1,
+                "component_size": "-",
+                "category": "M",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "radar",
+                "name": "Radar",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "computers",
+                "name": "Computer",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "fuel_intakes",
+                "name": "Fuel Intake",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "fuel_tanks",
+                "name": "Fuel Tank",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "quantum_drives",
+                "name": "Quantum Drive",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "jump_modules",
+                "name": "Jump Module",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "quantum_fuel_tanks",
+                "name": "Quantum Fuel Tank",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Retro Thruster",
+                "mounts": 2,
+                "component_size": "-",
+                "category": "R",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Maneuvering Thruster",
+                "mounts": 8,
+                "component_size": "-",
+                "category": "",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "power_plants",
+                "name": "Power Plant",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "coolers",
+                "name": "Cooler",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "shield_generators",
+                "name": "Shield Generator",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "weapons",
+                "name": "S3 Weapon",
+                "mounts": 2,
+                "component_size": "3",
+                "category": "",
+                "size": "3",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "turrets",
+                "name": "S1 Weapon",
+                "mounts": 1,
+                "component_size": "-",
+                "category": "",
+                "size": "3",
+                "details": "",
+                "quantity": 2,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "missiles",
+                "name": "S2 Missiles",
+                "mounts": 2,
+                "component_size": "2",
+                "category": "",
+                "size": "2",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            }
+        ],
+        "loaner": [],
+        "skus": [
+            {
+                "title": "Standard Edition",
+                "price": 75,
+                "available": 1,
+                "imported_at": "2024-01-07T12:54:04.000000Z"
+            },
+            {
+                "title": "Imperator Subscribers Edition",
+                "price": 75,
+                "available": 1,
+                "imported_at": "2024-02-06T23:00:14.000000Z"
+            },
+            {
+                "title": "Centurion Subscribers Edition",
+                "price": 75,
+                "available": 1,
+                "imported_at": "2024-02-06T23:00:14.000000Z"
+            }
+        ]
+    },
+    "meta": {
+        "processed_at": "2024-12-24 01:52:15",
+        "valid_relations": [
+            "shops",
+            "parts",
+            "hardpoints",
+            "components"
+        ]
+    }
+}

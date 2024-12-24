@@ -1,0 +1,465 @@
+{
+    "data": {
+        "uuid": "c0b86c69-55ac-4af3-a722-d46282813e91",
+        "name": "A1 Spirit",
+        "slug": "a1-spirit",
+        "class_name": "CRUS_Spirit_A1",
+        "sizes": {
+            "length": 44,
+            "beam": 47.5,
+            "height": 10
+        },
+        "emission": {
+            "ir": 15285,
+            "em_idle": 5768,
+            "em_max": 31784
+        },
+        "mass": 314271,
+        "cargo_capacity": 64,
+        "vehicle_inventory": 1.85,
+        "personal_inventory": 0,
+        "crew": {
+            "min": 2,
+            "max": null,
+            "weapon": 0,
+            "operation": null
+        },
+        "health": 67600,
+        "shield_hp": 4740,
+        "speed": {
+            "scm": 203.5,
+            "max": 1130,
+            "zero_to_scm": 0,
+            "zero_to_max": 0,
+            "scm_to_zero": 0,
+            "max_to_zero": 0
+        },
+        "fuel": {
+            "capacity": 450000,
+            "intake_rate": 30,
+            "usage": {
+                "main": 140,
+                "maneuvering": 71,
+                "retro": 300,
+                "vtol": 0
+            }
+        },
+        "quantum": {
+            "quantum_speed": 190000000,
+            "quantum_spool_time": 6,
+            "quantum_fuel_capacity": 3750,
+            "quantum_range": 163826998689.384
+        },
+        "agility": {
+            "pitch": 36,
+            "yaw": 36,
+            "roll": 101,
+            "acceleration": {
+                "main": 0,
+                "retro": 0,
+                "vtol": 0,
+                "maneuvering": 0,
+                "main_g": 0,
+                "retro_g": 0,
+                "vtol_g": 0,
+                "maneuvering_g": 0
+            }
+        },
+        "armor": {
+            "signal_infrared": 1.3,
+            "signal_electromagnetic": 1.3,
+            "signal_cross_section": 1.3,
+            "damage_physical": 0.48,
+            "damage_energy": 0.95,
+            "damage_distortion": 0.95,
+            "damage_thermal": 1,
+            "damage_biochemical": 1,
+            "damage_stun": 0
+        },
+        "foci": [
+            "Bomber"
+        ],
+        "type": "combat",
+        "description": "Crusader Industries brings its usual commitment to excellence directly to the civilian market with the A1 Spirit, a mid-size multi-purpose starship equipped as a light bomber but packing enough versatility to tackle multiple roles and unpredictable jobs.",
+        "size_class": 3,
+        "manufacturer": {
+            "name": "Crusader Industries",
+            "code": "CRUS"
+        },
+        "insurance": {
+            "claim_time": 6.75,
+            "expedite_time": 2.25,
+            "expedite_cost": 3375
+        },
+        "shops": [],
+        "parts": [
+            {
+                "name": "body",
+                "display_name": "Body",
+                "damage_max": 16500,
+                "children": [
+                    {
+                        "name": "nose",
+                        "display_name": "Nose",
+                        "damage_max": 13500,
+                        "children": []
+                    },
+                    {
+                        "name": "rear",
+                        "display_name": "Rear",
+                        "damage_max": 11700,
+                        "children": [
+                            {
+                                "name": "tail_left",
+                                "display_name": "Tail left",
+                                "damage_max": 1200,
+                                "children": []
+                            },
+                            {
+                                "name": "tail_right",
+                                "display_name": "Tail right",
+                                "damage_max": 1200,
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "wing_base_left",
+                        "display_name": "Wing base (left)",
+                        "damage_max": 10400,
+                        "children": [
+                            {
+                                "name": "wing_left",
+                                "display_name": "Wing (left)",
+                                "damage_max": 1050,
+                                "children": [
+                                    {
+                                        "name": "vtol_geo_left",
+                                        "display_name": "Vtol geo (left)",
+                                        "damage_max": 150,
+                                        "children": [
+                                            {
+                                                "name": "vtol_flap_geo_left",
+                                                "display_name": "Vtol flap geo (left)",
+                                                "damage_max": 150,
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "wing_base_right",
+                        "display_name": "Wing base (right)",
+                        "damage_max": 10400,
+                        "children": [
+                            {
+                                "name": "wing_right",
+                                "display_name": "Wing (right)",
+                                "damage_max": 1050,
+                                "children": [
+                                    {
+                                        "name": "vtol_geo_right",
+                                        "display_name": "Vtol geo (right)",
+                                        "damage_max": 150,
+                                        "children": [
+                                            {
+                                                "name": "vtol_flap_geo_right",
+                                                "display_name": "Vtol flap geo (right)",
+                                                "damage_max": 150,
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "updated_at": "2024-12-23T08:50:47.000000Z",
+        "version": "3.24.3-LIVE.9423704",
+        "id": 237,
+        "chassis_id": 100,
+        "production_status": "flight-ready",
+        "production_note": "None",
+        "size": "medium",
+        "msrp": 200,
+        "pledge_url": "https:\/\/robertsspaceindustries.com\/pledge\/ships\/spirit\/A1-Spirit",
+        "components": [
+            {
+                "type": "radar",
+                "name": "Radar",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "computers",
+                "name": "Computer",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "fuel_tanks",
+                "name": "Fuel Tank",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "quantum_drives",
+                "name": "Quantum Drive",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "jump_modules",
+                "name": "Jump Module",
+                "mounts": 1,
+                "component_size": "TBD",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Retro Thruster",
+                "mounts": 2,
+                "component_size": "-",
+                "category": "R",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "power_plants",
+                "name": "Power Plant",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "coolers",
+                "name": "Cooler",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "shield_generators",
+                "name": "Shield Generator",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "VTOL Thruster",
+                "mounts": 12,
+                "component_size": "-",
+                "category": "V",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Fixed Maneuvering Thruster",
+                "mounts": 12,
+                "component_size": "-",
+                "category": "F",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "missiles",
+                "name": "S3 Missiles",
+                "mounts": 2,
+                "component_size": "3",
+                "category": "",
+                "size": "4",
+                "details": "",
+                "quantity": 2,
+                "manufacturer": "TBD",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "quantum_fuel_tanks",
+                "name": "Quantum Fuel Tank",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "main_thrusters",
+                "name": "Main Thruster",
+                "mounts": 8,
+                "component_size": "-",
+                "category": "M",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "weapons",
+                "name": "S3 Weapon",
+                "mounts": 2,
+                "component_size": "3",
+                "category": "",
+                "size": "3",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "turrets",
+                "name": "S3 Weapon",
+                "mounts": 1,
+                "component_size": "3",
+                "category": "",
+                "size": "3",
+                "details": "",
+                "quantity": 2,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "turrets",
+                "name": "S2 Weapon",
+                "mounts": 1,
+                "component_size": "2",
+                "category": "",
+                "size": "2",
+                "details": "",
+                "quantity": 2,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "missiles",
+                "name": "S5 Bombs",
+                "mounts": 2,
+                "component_size": "5",
+                "category": "",
+                "size": "5",
+                "details": "",
+                "quantity": 5,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            }
+        ],
+        "loaner": [
+            {
+                "name": "Freelancer MIS",
+                "link": "https:\/\/api.star-citizen.wiki\/api\/v2\/vehicles\/4b6700e5-38bd-4d8d-9281-ef82996b135f",
+                "version": "3.20.0-LIVE.8701927"
+            }
+        ],
+        "skus": [
+            {
+                "title": "Warbond Edition",
+                "price": 175,
+                "available": 1,
+                "imported_at": "2024-01-07T12:54:06.000000Z"
+            },
+            {
+                "title": "Warbond Edition",
+                "price": 175,
+                "available": 1,
+                "imported_at": "2024-01-18T23:00:38.000000Z"
+            },
+            {
+                "title": "Standard Edition",
+                "price": 200,
+                "available": 1,
+                "imported_at": "2024-01-18T23:00:38.000000Z"
+            },
+            {
+                "title": "Warbond Edition",
+                "price": 185,
+                "available": 1,
+                "imported_at": "2024-02-27T23:00:35.000000Z"
+            },
+            {
+                "title": "Imperator Subscribers Edition",
+                "price": 200,
+                "available": 1,
+                "imported_at": "2024-11-05T23:01:24.000000Z"
+            },
+            {
+                "title": "Warbond Edition",
+                "price": 185,
+                "available": 1,
+                "imported_at": "2024-12-02T23:01:39.000000Z"
+            }
+        ]
+    },
+    "meta": {
+        "processed_at": "2024-12-24 01:52:10",
+        "valid_relations": [
+            "shops",
+            "parts",
+            "hardpoints",
+            "components"
+        ]
+    }
+}

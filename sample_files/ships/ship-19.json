@@ -1,0 +1,417 @@
+{
+    "data": {
+        "uuid": "30aab266-9131-4a07-808b-61c868cb404f",
+        "name": "Ares Ion",
+        "slug": "ares-ion",
+        "class_name": "CRUS_Starfighter_Ion",
+        "sizes": {
+            "length": 27,
+            "beam": 30,
+            "height": 6
+        },
+        "emission": {
+            "ir": 8870,
+            "em_idle": 10689,
+            "em_max": 43454
+        },
+        "mass": 329001,
+        "cargo_capacity": 0,
+        "vehicle_inventory": 1.72,
+        "personal_inventory": 0,
+        "crew": {
+            "min": 1,
+            "max": null,
+            "weapon": 0,
+            "operation": null
+        },
+        "health": 32600,
+        "shield_hp": 9480,
+        "speed": {
+            "scm": 210,
+            "max": 1100,
+            "zero_to_scm": 2.316,
+            "zero_to_max": 12.136,
+            "scm_to_zero": 5.956,
+            "max_to_zero": 31.198
+        },
+        "fuel": {
+            "capacity": 450000,
+            "intake_rate": 0,
+            "usage": {
+                "main": 210,
+                "maneuvering": 83,
+                "retro": 82,
+                "vtol": 0
+            }
+        },
+        "quantum": {
+            "quantum_speed": 190000000,
+            "quantum_spool_time": 6,
+            "quantum_fuel_capacity": 5000,
+            "quantum_range": 241429261226.46066
+        },
+        "agility": {
+            "pitch": 43,
+            "yaw": 38,
+            "roll": 120,
+            "acceleration": {
+                "main": 90.638,
+                "retro": 35.258,
+                "vtol": 0,
+                "maneuvering": 80.862,
+                "main_g": 9.242,
+                "retro_g": 3.595,
+                "vtol_g": 0,
+                "maneuvering_g": 8.245
+            }
+        },
+        "armor": {
+            "signal_infrared": 1,
+            "signal_electromagnetic": 1,
+            "signal_cross_section": 1,
+            "damage_physical": 0.5,
+            "damage_energy": 1,
+            "damage_distortion": 1,
+            "damage_thermal": 1,
+            "damage_biochemical": 1,
+            "damage_stun": 0
+        },
+        "foci": [
+            "Heavy Fighter"
+        ],
+        "type": "combat",
+        "description": "Spark fear in the corridors of the most formidable gunships and frigates with the Ares Ion. This laser-equipped variant delivers extremely powerful shots to quickly disable the shields of even the biggest enemy vessels.",
+        "size_class": 3,
+        "manufacturer": {
+            "name": "Crusader Industries",
+            "code": "CRUS"
+        },
+        "insurance": {
+            "claim_time": 10.3,
+            "expedite_time": 3.43,
+            "expedite_cost": 7311
+        },
+        "shops": [
+            {
+                "uuid": "f0f830dd-4e72-4de6-a5a6-bea74f758181",
+                "name_raw": "Crusader Showroom, Orison",
+                "name": "Crusader Showroom",
+                "position": "Orison",
+                "profit_margin": 50,
+                "link": "https:\/\/api.star-citizen.wiki\/api\/v2\/shops\/f0f830dd-4e72-4de6-a5a6-bea74f758181",
+                "version": "3.19.1-LIVE.8526421",
+                "items": [
+                    {
+                        "uuid": "30aab266-9131-4a07-808b-61c868cb404f",
+                        "name": "Crusader Ares Star Fighter Ion",
+                        "type": "Vehicle",
+                        "sub_type": "Vehicle_Spaceship",
+                        "base_price": 2859000,
+                        "price_calculated": 2859000,
+                        "price_range": {
+                            "min": 2859000,
+                            "max": 2859000
+                        },
+                        "base_price_offset": 0,
+                        "max_discount": 0,
+                        "max_premium": 0,
+                        "inventory": 100,
+                        "optimal_inventory": 100,
+                        "max_inventory": 100,
+                        "auto_restock": true,
+                        "auto_consume": false,
+                        "refresh_rate": 1,
+                        "buyable": true,
+                        "sellable": false,
+                        "rentable": false,
+                        "version": "3.19.1-LIVE.8526421"
+                    }
+                ]
+            }
+        ],
+        "parts": [
+            {
+                "name": "body",
+                "display_name": "Body",
+                "damage_max": 8000,
+                "children": [
+                    {
+                        "name": "tail",
+                        "display_name": "Tail",
+                        "damage_max": 8000,
+                        "children": []
+                    },
+                    {
+                        "name": "right_wing",
+                        "display_name": "Wing (right)",
+                        "damage_max": 7000,
+                        "children": []
+                    },
+                    {
+                        "name": "lower_wing_right",
+                        "display_name": "Wing right (lower)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "lower_wing_left",
+                        "display_name": "Wing left (lower)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "left_wing",
+                        "display_name": "Wing (left)",
+                        "damage_max": 7000,
+                        "children": []
+                    },
+                    {
+                        "name": "canopy_translation",
+                        "display_name": "Canopy translation",
+                        "damage_max": 200,
+                        "children": []
+                    },
+                    {
+                        "name": "nacelle_right_debris",
+                        "display_name": "Nacelle debris (right)",
+                        "damage_max": 200,
+                        "children": []
+                    },
+                    {
+                        "name": "nacelle_left_debris",
+                        "display_name": "Nacelle debris (left)",
+                        "damage_max": 200,
+                        "children": []
+                    }
+                ]
+            }
+        ],
+        "updated_at": "2024-11-04T05:11:16.000000Z",
+        "version": "3.24.3-LIVE.9423704",
+        "id": 200,
+        "chassis_id": 79,
+        "production_status": "flight-ready",
+        "production_note": "None",
+        "size": "small",
+        "msrp": 250,
+        "pledge_url": "https:\/\/robertsspaceindustries.com\/pledge\/ships\/crusader-ares\/Ares-Ion",
+        "components": [
+            {
+                "type": "radar",
+                "name": "Radar",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "computers",
+                "name": "Computer",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "fuel_intakes",
+                "name": "Fuel Intake",
+                "mounts": 2,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "fuel_tanks",
+                "name": "Fuel Tank",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "quantum_drives",
+                "name": "Quantum Drive",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "jump_modules",
+                "name": "Jump Module",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "quantum_fuel_tanks",
+                "name": "Quantum Fuel Tank",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "power_plants",
+                "name": "Power Plant",
+                "mounts": 2,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "coolers",
+                "name": "Cooler",
+                "mounts": 4,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "shield_generators",
+                "name": "Shield Generator",
+                "mounts": 2,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "weapons",
+                "name": "S7 BEHR SF7E Laser Cannon",
+                "mounts": 1,
+                "component_size": "7",
+                "category": "",
+                "size": "7",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "Behring",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "main_thrusters",
+                "name": "Main Thruster",
+                "mounts": 2,
+                "component_size": "-",
+                "category": "M",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Retro Thruster",
+                "mounts": 2,
+                "component_size": "-",
+                "category": "R",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Maneuvering Thruster",
+                "mounts": 12,
+                "component_size": "-",
+                "category": "",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "missiles",
+                "name": "S3 Missiles",
+                "mounts": 1,
+                "component_size": "3",
+                "category": "",
+                "size": "5",
+                "details": "",
+                "quantity": 12,
+                "manufacturer": "TBD",
+                "component_class": "RSIWeapon"
+            }
+        ],
+        "loaner": [],
+        "skus": [
+            {
+                "title": "Warbond Edition",
+                "price": 220,
+                "available": 1,
+                "imported_at": "2024-01-07T12:54:05.000000Z"
+            },
+            {
+                "title": "Standard Edition",
+                "price": 250,
+                "available": 1,
+                "imported_at": "2024-01-25T23:00:41.000000Z"
+            },
+            {
+                "title": "Imperator Subscribers Edition",
+                "price": 250,
+                "available": 1,
+                "imported_at": "2024-02-06T23:00:14.000000Z"
+            },
+            {
+                "title": "Warbond Edition",
+                "price": 220,
+                "available": 1,
+                "imported_at": "2024-07-02T22:01:09.000000Z"
+            }
+        ]
+    },
+    "meta": {
+        "processed_at": "2024-12-24 01:52:13",
+        "valid_relations": [
+            "shops",
+            "parts",
+            "hardpoints",
+            "components"
+        ]
+    }
+}

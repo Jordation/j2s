@@ -1,0 +1,375 @@
+{
+    "data": {
+        "uuid": "31eaaac4-b1ee-4430-a01c-b4ef0470715d",
+        "name": "Argo Mole Talus Edition",
+        "slug": "argo-mole-talus-edition",
+        "class_name": "ARGO_MOLE_Talus",
+        "sizes": {
+            "length": 45,
+            "beam": 26,
+            "height": 15
+        },
+        "emission": {
+            "ir": 14399,
+            "em_idle": 41410,
+            "em_max": 76712
+        },
+        "mass": 869686,
+        "cargo_capacity": 96,
+        "vehicle_inventory": 4.57,
+        "personal_inventory": 0,
+        "crew": {
+            "min": 5,
+            "max": null,
+            "weapon": 0,
+            "operation": null
+        },
+        "health": 80375,
+        "shield_hp": 48800,
+        "speed": {
+            "scm": 140,
+            "max": 960,
+            "zero_to_scm": 5.073,
+            "zero_to_max": 34.787,
+            "scm_to_zero": 4.058,
+            "max_to_zero": 27.829
+        },
+        "fuel": {
+            "capacity": 2000000,
+            "intake_rate": 0,
+            "usage": {
+                "main": 498,
+                "maneuvering": 165,
+                "retro": 328,
+                "vtol": 0
+            }
+        },
+        "quantum": {
+            "quantum_speed": 190000000,
+            "quantum_spool_time": 6,
+            "quantum_fuel_capacity": 10000,
+            "quantum_range": 1638269986893.84
+        },
+        "agility": {
+            "pitch": 30,
+            "yaw": 30,
+            "roll": 75,
+            "acceleration": {
+                "main": 27.596,
+                "retro": 34.495,
+                "vtol": 21.616,
+                "maneuvering": 60.711,
+                "main_g": 2.814,
+                "retro_g": 3.517,
+                "vtol_g": 2.204,
+                "maneuvering_g": 6.19
+            }
+        },
+        "armor": {
+            "signal_infrared": 1,
+            "signal_electromagnetic": 1,
+            "signal_cross_section": 1,
+            "damage_physical": 0.45,
+            "damage_energy": 0.9,
+            "damage_distortion": 1,
+            "damage_thermal": 1,
+            "damage_biochemical": 1,
+            "damage_stun": 0
+        },
+        "foci": [
+            "Mining",
+            "Prospecting"
+        ],
+        "type": "industrial",
+        "description": "ARGO\u2019s pragmatic no-nonsense approach to ship design is celebrated in the unmistakable silhouette of the MOLE. Just one look at this machine and you know it means business. Tap into your full potential with the combined force of ARGO\u2019s patented trilateral mining system. The MOLE has a total of 24 mineral pods, each holding 12 SCU. Eight pods are usable at one time \u2013 when they\u2019re full, either head home or jettison them for collection by another vessel and carry on mining. Three independently controlled articulated extraction stations allow for maximum power and near-limitless versatility. The MOLE lives by the adage \u2019many hands make for light work\u2019.",
+        "size_class": 3,
+        "manufacturer": {
+            "name": "Argo Astronautics",
+            "code": "ARGO"
+        },
+        "insurance": {
+            "claim_time": 13.5,
+            "expedite_time": 4.5,
+            "expedite_cost": 5715
+        },
+        "shops": [],
+        "parts": [
+            {
+                "name": "Front",
+                "display_name": "Front",
+                "damage_max": 22575,
+                "children": [
+                    {
+                        "name": "Rear",
+                        "display_name": "Rear",
+                        "damage_max": 45000,
+                        "children": [
+                            {
+                                "name": "Vtol_Rear_Left",
+                                "display_name": "Vtol (rear left)",
+                                "damage_max": 1200,
+                                "children": []
+                            },
+                            {
+                                "name": "Thruster_Top_Left",
+                                "display_name": "Thruster (top left)",
+                                "damage_max": 2000,
+                                "children": []
+                            },
+                            {
+                                "name": "Thruster_Bot_Left",
+                                "display_name": "Thruster bot (left)",
+                                "damage_max": 2000,
+                                "children": []
+                            },
+                            {
+                                "name": "Vtol_Rear_Right",
+                                "display_name": "Vtol (rear right)",
+                                "damage_max": 1200,
+                                "children": []
+                            },
+                            {
+                                "name": "Thruster_Top_Right",
+                                "display_name": "Thruster (top right)",
+                                "damage_max": 2000,
+                                "children": []
+                            },
+                            {
+                                "name": "Thruster_Bot_Right",
+                                "display_name": "Thruster bot (right)",
+                                "damage_max": 2000,
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "thruster_front_vtol_left",
+                        "display_name": "Thruster vtol left (front)",
+                        "damage_max": 1200,
+                        "children": []
+                    },
+                    {
+                        "name": "thruster_front_vtol_right",
+                        "display_name": "Thruster vtol right (front)",
+                        "damage_max": 1200,
+                        "children": []
+                    }
+                ]
+            }
+        ],
+        "updated_at": "2024-11-04T05:09:44.000000Z",
+        "version": "3.24.3-LIVE.9423704",
+        "id": 203,
+        "chassis_id": 80,
+        "production_status": "flight-ready",
+        "production_note": "None",
+        "size": "medium",
+        "msrp": 315,
+        "pledge_url": "https:\/\/robertsspaceindustries.com\/pledge\/ships\/argo-mole\/Argo-Mole-Talus-Edition",
+        "components": [
+            {
+                "type": "radar",
+                "name": "Radar",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "computers",
+                "name": "Computer",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "fuel_intakes",
+                "name": "Fuel Intake",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "fuel_tanks",
+                "name": "Fuel Tank",
+                "mounts": 2,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "quantum_drives",
+                "name": "Quantum Drive",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "jump_modules",
+                "name": "Jump Module",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "quantum_fuel_tanks",
+                "name": "Quantum Fuel Tank",
+                "mounts": 1,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "main_thrusters",
+                "name": "Main Thruster",
+                "mounts": 4,
+                "component_size": "-",
+                "category": "M",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Retro Thruster",
+                "mounts": 4,
+                "component_size": "-",
+                "category": "R",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "power_plants",
+                "name": "Power Plant",
+                "mounts": 1,
+                "component_size": "L",
+                "category": "",
+                "size": "L",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "coolers",
+                "name": "Cooler",
+                "mounts": 1,
+                "component_size": "L",
+                "category": "",
+                "size": "L",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "shield_generators",
+                "name": "Shield Generator",
+                "mounts": 2,
+                "component_size": "M",
+                "category": "",
+                "size": "M",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Joint Maneuvering Thrusters",
+                "mounts": 8,
+                "component_size": "-",
+                "category": "",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "weapons",
+                "name": "S2 Weapon",
+                "mounts": 2,
+                "component_size": "2",
+                "category": "",
+                "size": "2",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "VTOL Thruster",
+                "mounts": 4,
+                "component_size": "-",
+                "category": "V",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "utility_items",
+                "name": "S2 Mining Laser",
+                "mounts": 3,
+                "component_size": "2",
+                "category": "",
+                "size": "2",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            }
+        ],
+        "loaner": [],
+        "skus": []
+    },
+    "meta": {
+        "processed_at": "2024-12-24 01:52:14",
+        "valid_relations": [
+            "shops",
+            "parts",
+            "hardpoints",
+            "components"
+        ]
+    }
+}

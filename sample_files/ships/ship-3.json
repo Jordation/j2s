@@ -1,0 +1,252 @@
+{
+    "data": {
+        "id": 7,
+        "chassis_id": 2,
+        "name": "300i",
+        "slug": "300i",
+        "sizes": {
+            "length": 27,
+            "beam": 17,
+            "height": 8
+        },
+        "mass": 66320,
+        "cargo_capacity": 8,
+        "crew": {
+            "min": 1,
+            "max": 1
+        },
+        "speed": {
+            "scm": 204,
+            "max": 1190
+        },
+        "agility": {
+            "pitch": null,
+            "yaw": null,
+            "roll": null,
+            "acceleration": {
+                "x_axis": null,
+                "y_axis": null,
+                "z_axis": null
+            }
+        },
+        "foci": [
+            "Touring",
+            "Luxury"
+        ],
+        "production_status": "flight-ready",
+        "production_note": "Rework complete (3.5.0)",
+        "type": "multi",
+        "description": "If you're going to travel the stars... why not do it in style? The 300i is Origin Jumpworks' premiere luxury spacecraft. It is a sleek, silver killer that sends as much of a message with its silhouette as it does with its weaponry.",
+        "size": "small",
+        "msrp": 60,
+        "pledge_url": "https:\/\/robertsspaceindustries.com\/pledge\/ships\/origin-300\/300i",
+        "skus": [
+            {
+                "title": "Standard Edition",
+                "price": 60,
+                "available": 1,
+                "imported_at": "2024-01-07T12:54:02.000000Z"
+            },
+            {
+                "title": "Warbond Edition",
+                "price": 55,
+                "available": 1,
+                "imported_at": "2024-01-07T12:54:02.000000Z"
+            }
+        ],
+        "manufacturer": {
+            "code": "ORIG",
+            "name": "Origin Jumpworks"
+        },
+        "components": [
+            {
+                "type": "radar",
+                "name": "Radar",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "computers",
+                "name": "Computer",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "fuel_intakes",
+                "name": "Fuel Intake",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "fuel_tanks",
+                "name": "Fuel Tank",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "quantum_drives",
+                "name": "Quantum Drive",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "jump_modules",
+                "name": "Jump Module",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "quantum_fuel_tanks",
+                "name": "Quantum Fuel Tank",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "power_plants",
+                "name": "Power Plant",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "coolers",
+                "name": "Cooler",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "shield_generators",
+                "name": "Shield Generator",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "main_thrusters",
+                "name": "Main Thruster",
+                "mounts": 1,
+                "component_size": "-",
+                "category": "M",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Retro Thruster",
+                "mounts": 2,
+                "component_size": "-",
+                "category": "R",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Fixed Maneuvering Thruster",
+                "mounts": 11,
+                "component_size": "-",
+                "category": "F",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "missiles",
+                "name": "S2 Missile",
+                "mounts": 2,
+                "component_size": "-",
+                "category": "",
+                "size": "2",
+                "details": "Behring MSD-111",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "weapons",
+                "name": "S3 Weapon",
+                "mounts": 3,
+                "component_size": "3",
+                "category": "",
+                "size": "3",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            }
+        ],
+        "loaner": [],
+        "updated_at": "2024-12-05T19:01:29.000000Z"
+    },
+    "meta": {
+        "processed_at": "2024-12-23 08:56:24",
+        "valid_relations": [
+            "components"
+        ]
+    }
+}

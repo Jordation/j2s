@@ -1,0 +1,3587 @@
+{
+    "data": {
+        "uuid": "17276ad3-7636-40b8-969a-877a2b439b37",
+        "name": "Sabre",
+        "slug": "sabre",
+        "class_name": "AEGS_Sabre",
+        "sizes": {
+            "length": 24.5,
+            "beam": 24.5,
+            "height": 5
+        },
+        "emission": {
+            "ir": 9732,
+            "em_idle": 6183,
+            "em_max": 21363
+        },
+        "mass": 86593,
+        "cargo_capacity": 0,
+        "vehicle_inventory": 1.3,
+        "personal_inventory": 0,
+        "crew": {
+            "min": 1,
+            "max": null,
+            "weapon": 0,
+            "operation": null
+        },
+        "health": 37000,
+        "shield_hp": 2560,
+        "speed": {
+            "scm": 206,
+            "max": 1235,
+            "zero_to_scm": 2.027,
+            "zero_to_max": 12.152,
+            "scm_to_zero": 9.91,
+            "max_to_zero": 59.412
+        },
+        "fuel": {
+            "capacity": 135000,
+            "intake_rate": 0,
+            "usage": {
+                "main": 81,
+                "maneuvering": 18,
+                "retro": 7,
+                "vtol": 0
+            }
+        },
+        "quantum": {
+            "quantum_speed": 165000000,
+            "quantum_spool_time": 4,
+            "quantum_fuel_capacity": 612.4965,
+            "quantum_range": 36764495798.3193
+        },
+        "agility": {
+            "pitch": 55,
+            "yaw": 55,
+            "roll": 160,
+            "acceleration": {
+                "main": 101.625,
+                "retro": 20.786,
+                "vtol": 0,
+                "maneuvering": 66.116,
+                "main_g": 10.362,
+                "retro_g": 2.119,
+                "vtol_g": 0,
+                "maneuvering_g": 6.741
+            }
+        },
+        "armor": {
+            "signal_infrared": 0.6,
+            "signal_electromagnetic": 0.6,
+            "signal_cross_section": 0.6,
+            "damage_physical": 0.5,
+            "damage_energy": 1,
+            "damage_distortion": 1,
+            "damage_thermal": 1,
+            "damage_biochemical": 1,
+            "damage_stun": 0
+        },
+        "foci": [
+            "Stealth Fighter"
+        ],
+        "type": "combat",
+        "description": "Part of Aegis Dynamics’ Phase Two of new ship models, the Sabre was designed as a space superiority fighter for those situations where you need to leave a lighter footprint. Designed to be a rapid responder, the Sabre is more than capable of establishing battlefield dominance for any number of combat scenarios.",
+        "size_class": 2,
+        "manufacturer": {
+            "name": "Aegis Dynamics",
+            "code": "AEGS"
+        },
+        "insurance": {
+            "claim_time": 9.449,
+            "expedite_time": 3.15,
+            "expedite_cost": 4689
+        },
+        "hardpoints": [
+            {
+                "name": "hardpoint_air_traffic_controller",
+                "position": null,
+                "min_size": null,
+                "max_size": null,
+                "class_name": "AEGS_Sabre_ShipATCDataManager",
+                "health": null,
+                "type": null,
+                "sub_type": null
+            },
+            {
+                "name": "hardpoint_armour",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "armr_aegs_sabre",
+                "health": 1000,
+                "type": "Armor",
+                "sub_type": "Medium",
+                "item": {
+                    "uuid": "2e7bf45e-522d-49bd-a4f6-0e95558db200",
+                    "name": "Sabre Ship Armor",
+                    "class_name": "armr_aegs_sabre",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/2e7bf45e-522d-49bd-a4f6-0e95558db200",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "Armor",
+                    "sub_type": "Medium",
+                    "emp": {
+                        "signal_infrared": 0.6,
+                        "signal_electromagnetic": 0.6,
+                        "signal_cross_section": 0.6,
+                        "damage_physical": 0.5,
+                        "damage_energy": 1,
+                        "damage_distortion": 1,
+                        "damage_thermal": 1,
+                        "damage_biochemical": 1,
+                        "damage_stun": 0
+                    },
+                    "updated_at": "2024-11-03T20:36:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_avionics",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "COMP_BEHR_S01_CSR-RP",
+                "health": null,
+                "type": null,
+                "sub_type": null
+            },
+            {
+                "name": "hardpoint_cockpit_flair",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "",
+                "health": null,
+                "type": null,
+                "sub_type": null
+            },
+            {
+                "name": "hardpoint_controller_capacitor_assignment",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "controller_capacitorassignment",
+                "health": null,
+                "type": "CapacitorAssignmentController",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "0219b443-6f28-4aa2-bcc3-cfbff843729d",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "controller_capacitorassignment",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/0219b443-6f28-4aa2-bcc3-cfbff843729d",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "CapacitorAssignmentController",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T22:25:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_controller_comms",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "controller_comms",
+                "health": null,
+                "type": "CommsController",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "ae1a186e-0f8c-4deb-8079-bfb54df4a8a7",
+                    "name": "COMMS",
+                    "class_name": "controller_comms",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/ae1a186e-0f8c-4deb-8079-bfb54df4a8a7",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "CommsController",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T22:25:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_controller_cooler",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "controller_cooler",
+                "health": null,
+                "type": "CoolerController",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "b935e5d8-dead-47c5-8937-382c3aa11682",
+                    "name": "HEAT",
+                    "class_name": "controller_cooler",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/b935e5d8-dead-47c5-8937-382c3aa11682",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "CoolerController",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T22:25:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_controller_door",
+                "position": null,
+                "min_size": null,
+                "max_size": null,
+                "class_name": "controller_door",
+                "health": null,
+                "type": "DoorController",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "4a9ebf31-a405-4b68-9886-b4a47bd1b61d",
+                    "name": "SECURITY",
+                    "class_name": "controller_door",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/4a9ebf31-a405-4b68-9886-b4a47bd1b61d",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "DoorController",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T22:25:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_controller_energy",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "controller_energy",
+                "health": null,
+                "type": "EnergyController",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "61cc7bf5-6666-40f7-8c0a-ee8a8092f51e",
+                    "name": "POWER",
+                    "class_name": "controller_energy",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/61cc7bf5-6666-40f7-8c0a-ee8a8092f51e",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "EnergyController",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T22:25:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_controller_flight",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "controller_flight_aegs_sabre",
+                "health": null,
+                "type": "FlightController",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "5a8d386d-c139-4f59-a60c-49bb6f897a03",
+                    "name": "SELF STATUS",
+                    "class_name": "controller_flight_aegs_sabre",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/5a8d386d-c139-4f59-a60c-49bb6f897a03",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "FlightController",
+                    "sub_type": "UNDEFINED",
+                    "flight_controller": {
+                        "scm_speed": 206,
+                        "max_speed": 1235,
+                        "pitch": 55,
+                        "yaw": 55,
+                        "roll": 160
+                    },
+                    "updated_at": "2024-11-03T22:25:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_controller_fuel",
+                "position": null,
+                "min_size": null,
+                "max_size": null,
+                "class_name": "controller_fuel",
+                "health": null,
+                "type": "FuelController",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "9925488b-127a-4fc3-b7bb-9e4f5a46bbbd",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "controller_fuel",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/9925488b-127a-4fc3-b7bb-9e4f5a46bbbd",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "FuelController",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T22:32:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_controller_light",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "controller_light",
+                "health": null,
+                "type": "LightController",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "056628be-ecee-41b9-9dd2-bb32215e6e34",
+                    "name": "LIGHTS",
+                    "class_name": "controller_light",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/056628be-ecee-41b9-9dd2-bb32215e6e34",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "LightController",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T22:32:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_controller_missile",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "controller_missile",
+                "health": null,
+                "type": "MissileController",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "4750556e-1afc-45be-86f7-f7adbc1fb7aa",
+                    "name": "MISSILES",
+                    "class_name": "controller_missile",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/4750556e-1afc-45be-86f7-f7adbc1fb7aa",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "MissileController",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T22:32:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_controller_shield",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "controller_shield_aegs_sabre",
+                "health": null,
+                "type": "ShieldController",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "c8dfd4f7-fff6-4566-8d56-9bdd02dd1a07",
+                    "name": "SHIELDS",
+                    "class_name": "controller_shield_aegs_sabre",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/c8dfd4f7-fff6-4566-8d56-9bdd02dd1a07",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "ShieldController",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T22:33:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_controller_weapon",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "controller_weapon",
+                "health": null,
+                "type": "WeaponController",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "c78851f1-ded8-4e8d-91ec-905e3dae075e",
+                    "name": "WEAPONS",
+                    "class_name": "controller_weapon",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/c78851f1-ded8-4e8d-91ec-905e3dae075e",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "WeaponController",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T22:38:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_cooler_left",
+                "position": "left",
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "cool_aegs_s01_bracer_scitem",
+                "health": 540,
+                "type": "Cooler",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "4ec3037b-4b6f-4837-b00d-cd9b4836a82a",
+                    "name": "Bracer",
+                    "class_name": "cool_aegs_s01_bracer_scitem",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/4ec3037b-4b6f-4837-b00d-cd9b4836a82a",
+                    "size": 1,
+                    "mass": 210,
+                    "grade": "C",
+                    "class": "Military",
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "Cooler",
+                    "sub_type": "UNDEFINED",
+                    "cooler": {
+                        "cooling_rate": 260000,
+                        "suppression_ir_factor": 0.1,
+                        "suppression_heat_factor": 0.1
+                    },
+                    "updated_at": "2024-11-03T22:43:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_cooler_right",
+                "position": "right",
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "cool_aegs_s01_bracer_scitem",
+                "health": 540,
+                "type": "Cooler",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "4ec3037b-4b6f-4837-b00d-cd9b4836a82a",
+                    "name": "Bracer",
+                    "class_name": "cool_aegs_s01_bracer_scitem",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/4ec3037b-4b6f-4837-b00d-cd9b4836a82a",
+                    "size": 1,
+                    "mass": 210,
+                    "grade": "C",
+                    "class": "Military",
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "Cooler",
+                    "sub_type": "UNDEFINED",
+                    "cooler": {
+                        "cooling_rate": 260000,
+                        "suppression_ir_factor": 0.1,
+                        "suppression_heat_factor": 0.1
+                    },
+                    "updated_at": "2024-11-03T22:43:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_countermeasure_launcher_left",
+                "position": "left",
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "aegs_sabre_cml_flare",
+                "health": 1000,
+                "type": "WeaponDefensive",
+                "sub_type": "CountermeasureLauncher",
+                "item": {
+                    "uuid": "07ada054-698a-4769-8129-ddd9bc059b75",
+                    "name": "Aegis Sabre - Decoy Launcher",
+                    "class_name": "aegs_sabre_cml_flare",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/07ada054-698a-4769-8129-ddd9bc059b75",
+                    "size": 1,
+                    "mass": 150,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "WeaponDefensive",
+                    "sub_type": "CountermeasureLauncher",
+                    "counter_measure": {
+                        "class": null,
+                        "type": null,
+                        "capacity": 48,
+                        "range": 520,
+                        "damage_per_shot": 0,
+                        "modes": [
+                            {
+                                "mode": "Burst",
+                                "type": "burst",
+                                "rpm": 450,
+                                "ammo_per_shot": 1,
+                                "pellets_per_shot": 1,
+                                "damage_per_second": 0
+                            }
+                        ],
+                        "damages": [],
+                        "regeneration": null,
+                        "ammunition": {
+                            "uuid": "9621efe3-86b7-4da3-ac4a-430394f53bf4",
+                            "size": 0,
+                            "lifetime": 8,
+                            "speed": 65,
+                            "range": 520,
+                            "piercability": {
+                                "damage_falloff_level_1": 0,
+                                "damage_falloff_level_2": 0,
+                                "damage_falloff_level_3": 0,
+                                "max_penetration_thickness": 0
+                            },
+                            "damage_falloffs": {
+                                "min_distance": {
+                                    "physical": 0,
+                                    "energy": 0,
+                                    "distortion": 0,
+                                    "thermal": 0,
+                                    "biochemical": 0,
+                                    "stun": 0
+                                },
+                                "per_meter": {
+                                    "physical": 0,
+                                    "energy": 0,
+                                    "distortion": 0,
+                                    "thermal": 0,
+                                    "biochemical": 0,
+                                    "stun": 0
+                                },
+                                "min_damage": {
+                                    "physical": 0,
+                                    "energy": 0,
+                                    "distortion": 0,
+                                    "thermal": 0,
+                                    "biochemical": 0,
+                                    "stun": 0
+                                }
+                            }
+                        }
+                    },
+                    "updated_at": "2024-11-03T20:05:48.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_countermeasure_launcher_right",
+                "position": "right",
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "aegs_sabre_cml_chaff",
+                "health": 1000,
+                "type": "WeaponDefensive",
+                "sub_type": "CountermeasureLauncher",
+                "item": {
+                    "uuid": "bbc04262-a5cb-41c0-88d8-d49eff08a577",
+                    "name": "Aegis Sabre - Noise Launcher",
+                    "class_name": "aegs_sabre_cml_chaff",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/bbc04262-a5cb-41c0-88d8-d49eff08a577",
+                    "size": 1,
+                    "mass": 150,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "WeaponDefensive",
+                    "sub_type": "CountermeasureLauncher",
+                    "counter_measure": {
+                        "class": null,
+                        "type": null,
+                        "capacity": 5,
+                        "range": 144,
+                        "damage_per_shot": 0,
+                        "modes": [
+                            {
+                                "mode": "Single",
+                                "type": "single",
+                                "rpm": 50,
+                                "ammo_per_shot": 1,
+                                "pellets_per_shot": 1,
+                                "damage_per_second": 0
+                            }
+                        ],
+                        "damages": [],
+                        "regeneration": null,
+                        "ammunition": {
+                            "uuid": "fba15492-1bee-4ef0-8efd-815e3c500ea9",
+                            "size": 0,
+                            "lifetime": 0.8,
+                            "speed": 180,
+                            "range": 144,
+                            "piercability": {
+                                "damage_falloff_level_1": 0,
+                                "damage_falloff_level_2": 0,
+                                "damage_falloff_level_3": 0,
+                                "max_penetration_thickness": 0
+                            },
+                            "damage_falloffs": {
+                                "min_distance": {
+                                    "physical": 0,
+                                    "energy": 0,
+                                    "distortion": 0,
+                                    "thermal": 0,
+                                    "biochemical": 0,
+                                    "stun": 0
+                                },
+                                "per_meter": {
+                                    "physical": 0,
+                                    "energy": 0,
+                                    "distortion": 0,
+                                    "thermal": 0,
+                                    "biochemical": 0,
+                                    "stun": 0
+                                },
+                                "min_damage": {
+                                    "physical": 0,
+                                    "energy": 0,
+                                    "distortion": 0,
+                                    "thermal": 0,
+                                    "biochemical": 0,
+                                    "stun": 0
+                                }
+                            }
+                        }
+                    },
+                    "updated_at": "2024-11-03T20:05:48.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_dashboard_pilot",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "aegs_sabre_scitem_dashboard_pilot",
+                "health": 1,
+                "type": "SeatDashboard",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "55df5df6-b963-4445-8672-2bea5291e8a6",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_scitem_dashboard_pilot",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/55df5df6-b963-4445-8672-2bea5291e8a6",
+                    "size": 1,
+                    "mass": 1,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "SeatDashboard",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T20:07:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                },
+                "children": [
+                    {
+                        "name": "radar_helper",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "radar_display_sabre",
+                        "health": null,
+                        "type": "Display",
+                        "sub_type": "UNDEFINED",
+                        "item": {
+                            "uuid": "f5ecb610-30b8-4674-b38c-c4506aeafad2",
+                            "name": "\u003C= PLACEHOLDER =\u003E",
+                            "class_name": "radar_display_sabre",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/f5ecb610-30b8-4674-b38c-c4506aeafad2",
+                            "size": 1,
+                            "mass": 0,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Unknown Manufacturer",
+                                "code": "UNKN",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                            },
+                            "type": "Display",
+                            "sub_type": "UNDEFINED",
+                            "updated_at": "2024-11-04T03:19:42.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    },
+                    {
+                        "name": "Display_HUD",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "h_dashboard_projector_hud_aegs_sabre",
+                        "health": null,
+                        "type": "Display",
+                        "sub_type": "UNDEFINED",
+                        "item": {
+                            "uuid": "08978f4a-1bbb-41e4-9c14-3757f6e604e9",
+                            "name": "\u003C= PLACEHOLDER =\u003E",
+                            "class_name": "h_dashboard_projector_hud_aegs_sabre",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/08978f4a-1bbb-41e4-9c14-3757f6e604e9",
+                            "size": 1,
+                            "mass": 0,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Unknown Manufacturer",
+                                "code": "UNKN",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                            },
+                            "type": "Display",
+                            "sub_type": "UNDEFINED",
+                            "updated_at": "2024-11-04T00:32:44.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    },
+                    {
+                        "name": "Screen_Top_Left",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "vehicle_screen_mfd",
+                        "health": null,
+                        "type": "Display",
+                        "sub_type": "UNDEFINED",
+                        "item": {
+                            "uuid": "c08cedfa-fafc-4ea6-9737-59faeb4b1510",
+                            "name": "\u003C= PLACEHOLDER =\u003E",
+                            "class_name": "vehicle_screen_mfd",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/c08cedfa-fafc-4ea6-9737-59faeb4b1510",
+                            "size": 1,
+                            "mass": 0,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Unknown Manufacturer",
+                                "code": "UNKN",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                            },
+                            "type": "Display",
+                            "sub_type": "UNDEFINED",
+                            "updated_at": "2024-11-04T04:53:43.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    },
+                    {
+                        "name": "Screen_Top_Right",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "vehicle_screen_mfd",
+                        "health": null,
+                        "type": "Display",
+                        "sub_type": "UNDEFINED",
+                        "item": {
+                            "uuid": "c08cedfa-fafc-4ea6-9737-59faeb4b1510",
+                            "name": "\u003C= PLACEHOLDER =\u003E",
+                            "class_name": "vehicle_screen_mfd",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/c08cedfa-fafc-4ea6-9737-59faeb4b1510",
+                            "size": 1,
+                            "mass": 0,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Unknown Manufacturer",
+                                "code": "UNKN",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                            },
+                            "type": "Display",
+                            "sub_type": "UNDEFINED",
+                            "updated_at": "2024-11-04T04:53:43.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    },
+                    {
+                        "name": "Screen_Bottom_Left",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "vehicle_screen_mfd",
+                        "health": null,
+                        "type": "Display",
+                        "sub_type": "UNDEFINED",
+                        "item": {
+                            "uuid": "c08cedfa-fafc-4ea6-9737-59faeb4b1510",
+                            "name": "\u003C= PLACEHOLDER =\u003E",
+                            "class_name": "vehicle_screen_mfd",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/c08cedfa-fafc-4ea6-9737-59faeb4b1510",
+                            "size": 1,
+                            "mass": 0,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Unknown Manufacturer",
+                                "code": "UNKN",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                            },
+                            "type": "Display",
+                            "sub_type": "UNDEFINED",
+                            "updated_at": "2024-11-04T04:53:43.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    },
+                    {
+                        "name": "Screen_Bottom_Right",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "vehicle_screen_mfd",
+                        "health": null,
+                        "type": "Display",
+                        "sub_type": "UNDEFINED",
+                        "item": {
+                            "uuid": "c08cedfa-fafc-4ea6-9737-59faeb4b1510",
+                            "name": "\u003C= PLACEHOLDER =\u003E",
+                            "class_name": "vehicle_screen_mfd",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/c08cedfa-fafc-4ea6-9737-59faeb4b1510",
+                            "size": 1,
+                            "mass": 0,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Unknown Manufacturer",
+                                "code": "UNKN",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                            },
+                            "type": "Display",
+                            "sub_type": "UNDEFINED",
+                            "updated_at": "2024-11-04T04:53:43.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    },
+                    {
+                        "name": "Screen_Annunciator_Left",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "vehicle_screen_physical_holo",
+                        "health": null,
+                        "type": "Display",
+                        "sub_type": "UNDEFINED",
+                        "item": {
+                            "uuid": "89d12a4d-4327-45ba-954f-d81d91a6fd13",
+                            "name": "\u003C= PLACEHOLDER =\u003E",
+                            "class_name": "vehicle_screen_physical_holo",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/89d12a4d-4327-45ba-954f-d81d91a6fd13",
+                            "size": 1,
+                            "mass": 0,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Unknown Manufacturer",
+                                "code": "UNKN",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                            },
+                            "type": "Display",
+                            "sub_type": "UNDEFINED",
+                            "updated_at": "2024-11-04T04:55:12.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    },
+                    {
+                        "name": "Screen_Annunciator_Right",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "vehicle_screen_physical_holo",
+                        "health": null,
+                        "type": "Display",
+                        "sub_type": "UNDEFINED",
+                        "item": {
+                            "uuid": "89d12a4d-4327-45ba-954f-d81d91a6fd13",
+                            "name": "\u003C= PLACEHOLDER =\u003E",
+                            "class_name": "vehicle_screen_physical_holo",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/89d12a4d-4327-45ba-954f-d81d91a6fd13",
+                            "size": 1,
+                            "mass": 0,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Unknown Manufacturer",
+                                "code": "UNKN",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                            },
+                            "type": "Display",
+                            "sub_type": "UNDEFINED",
+                            "updated_at": "2024-11-04T04:55:12.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "hardpoint_engine_left",
+                "position": "left",
+                "min_size": 1,
+                "max_size": 3,
+                "class_name": "aegs_sabre_thruster_main",
+                "health": 14500,
+                "type": "MainThruster",
+                "sub_type": "FixedThruster",
+                "item": {
+                    "uuid": "36362a18-f26c-490b-88cf-4fe553499a83",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_main",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/36362a18-f26c-490b-88cf-4fe553499a83",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "MainThruster",
+                    "sub_type": "FixedThruster",
+                    "thruster": {
+                        "thrust_capacity": 4400000,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.091875,
+                        "type": "Main"
+                    },
+                    "updated_at": "2024-11-03T20:07:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_engine_right",
+                "position": "right",
+                "min_size": 1,
+                "max_size": 3,
+                "class_name": "aegs_sabre_thruster_main",
+                "health": 14500,
+                "type": "MainThruster",
+                "sub_type": "FixedThruster",
+                "item": {
+                    "uuid": "36362a18-f26c-490b-88cf-4fe553499a83",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_main",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/36362a18-f26c-490b-88cf-4fe553499a83",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "MainThruster",
+                    "sub_type": "FixedThruster",
+                    "thruster": {
+                        "thrust_capacity": 4400000,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.091875,
+                        "type": "Main"
+                    },
+                    "updated_at": "2024-11-03T20:07:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_fuel_intake_left",
+                "position": "left",
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "intk_aegs_sabre",
+                "health": null,
+                "type": "FuelIntake",
+                "sub_type": "Fuel",
+                "item": {
+                    "uuid": "05d0837c-61bb-4a29-a103-d024eceafb87",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "intk_aegs_sabre",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/05d0837c-61bb-4a29-a103-d024eceafb87",
+                    "size": 1,
+                    "mass": 10,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "FuelIntake",
+                    "sub_type": "Fuel",
+                    "fuel_intake": {
+                        "fuel_push_rate": 0,
+                        "minimum_rate": 0.2
+                    },
+                    "updated_at": "2024-11-04T00:56:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_fuel_intake_right",
+                "position": "right",
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "intk_aegs_sabre",
+                "health": null,
+                "type": "FuelIntake",
+                "sub_type": "Fuel",
+                "item": {
+                    "uuid": "05d0837c-61bb-4a29-a103-d024eceafb87",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "intk_aegs_sabre",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/05d0837c-61bb-4a29-a103-d024eceafb87",
+                    "size": 1,
+                    "mass": 10,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "FuelIntake",
+                    "sub_type": "Fuel",
+                    "fuel_intake": {
+                        "fuel_push_rate": 0,
+                        "minimum_rate": 0.2
+                    },
+                    "updated_at": "2024-11-04T00:56:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_fuel_port",
+                "position": null,
+                "min_size": null,
+                "max_size": null,
+                "class_name": "dockingtube_fuel_ports_aegs_sabre",
+                "health": null,
+                "type": "DockingCollar",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "e128980d-1a21-4359-a044-efb785175c8a",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "dockingtube_fuel_ports_aegs_sabre",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/e128980d-1a21-4359-a044-efb785175c8a",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "DockingCollar",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T23:07:44.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_fuel_tank_left",
+                "position": "left",
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "htnk_aegs_sabre",
+                "health": null,
+                "type": "FuelTank",
+                "sub_type": "Fuel",
+                "item": {
+                    "uuid": "66561c57-a1f0-45c8-a7f2-90119a3fe25b",
+                    "name": "Internal Tank",
+                    "class_name": "htnk_aegs_sabre",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/66561c57-a1f0-45c8-a7f2-90119a3fe25b",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "FuelTank",
+                    "sub_type": "Fuel",
+                    "fuel_tank": {
+                        "fill_rate": 10000,
+                        "drain_rate": 10000,
+                        "capacity": 67500
+                    },
+                    "inventory": {
+                        "width": 0,
+                        "height": 0,
+                        "length": 0,
+                        "dimension": 0,
+                        "scu": 6.75,
+                        "scu_converted": 6.75,
+                        "unit": "SCU"
+                    },
+                    "updated_at": "2024-11-04T00:50:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_fuel_tank_right",
+                "position": "right",
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "htnk_aegs_sabre",
+                "health": null,
+                "type": "FuelTank",
+                "sub_type": "Fuel",
+                "item": {
+                    "uuid": "66561c57-a1f0-45c8-a7f2-90119a3fe25b",
+                    "name": "Internal Tank",
+                    "class_name": "htnk_aegs_sabre",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/66561c57-a1f0-45c8-a7f2-90119a3fe25b",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "FuelTank",
+                    "sub_type": "Fuel",
+                    "fuel_tank": {
+                        "fill_rate": 10000,
+                        "drain_rate": 10000,
+                        "capacity": 67500
+                    },
+                    "inventory": {
+                        "width": 0,
+                        "height": 0,
+                        "length": 0,
+                        "dimension": 0,
+                        "scu": 6.75,
+                        "scu_converted": 6.75,
+                        "unit": "SCU"
+                    },
+                    "updated_at": "2024-11-04T00:50:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_lifesupport",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "lfsp_tydt_s01_comfortair",
+                "health": 450,
+                "type": "LifeSupportGenerator",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "e947b002-e65e-4637-90b7-c894925d6625",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "lfsp_tydt_s01_comfortair",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/e947b002-e65e-4637-90b7-c894925d6625",
+                    "size": 1,
+                    "mass": 91,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Tyler Design & Tech",
+                        "code": "TYDT",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Tyler+Design+%26+Tech"
+                    },
+                    "type": "LifeSupportGenerator",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-04T01:15:43.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_paint",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "",
+                "health": null,
+                "type": null,
+                "sub_type": null
+            },
+            {
+                "name": "hardpoint_ping",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "test_ping",
+                "health": null,
+                "type": null,
+                "sub_type": null
+            },
+            {
+                "name": "hardpoint_powerplant_01",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "powr_tydt_s01_soniclite_scitem",
+                "health": 500,
+                "type": "PowerPlant",
+                "sub_type": "Power",
+                "item": {
+                    "uuid": "ad089033-7cfc-479f-b7d4-49a93e1e3bd4",
+                    "name": "SonicLite",
+                    "class_name": "powr_tydt_s01_soniclite_scitem",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/ad089033-7cfc-479f-b7d4-49a93e1e3bd4",
+                    "size": 1,
+                    "mass": 89,
+                    "grade": "C",
+                    "class": "Stealth",
+                    "manufacturer": {
+                        "name": "Tyler Design & Tech",
+                        "code": "TYDT",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Tyler+Design+%26+Tech"
+                    },
+                    "type": "PowerPlant",
+                    "sub_type": "Power",
+                    "power_plant": {
+                        "power_output": 1367.28
+                    },
+                    "updated_at": "2024-11-04T03:03:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_powerplant_02",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "powr_tydt_s01_soniclite_scitem",
+                "health": 500,
+                "type": "PowerPlant",
+                "sub_type": "Power",
+                "item": {
+                    "uuid": "ad089033-7cfc-479f-b7d4-49a93e1e3bd4",
+                    "name": "SonicLite",
+                    "class_name": "powr_tydt_s01_soniclite_scitem",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/ad089033-7cfc-479f-b7d4-49a93e1e3bd4",
+                    "size": 1,
+                    "mass": 89,
+                    "grade": "C",
+                    "class": "Stealth",
+                    "manufacturer": {
+                        "name": "Tyler Design & Tech",
+                        "code": "TYDT",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Tyler+Design+%26+Tech"
+                    },
+                    "type": "PowerPlant",
+                    "sub_type": "Power",
+                    "power_plant": {
+                        "power_output": 1367.28
+                    },
+                    "updated_at": "2024-11-04T03:03:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_quantum_drive",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "qdrv_raco_s01_drift_scitem",
+                "health": 380,
+                "type": "QuantumDrive",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "c933bab5-5eec-42fe-ae83-b2c5ff91502f",
+                    "name": "Drift",
+                    "class_name": "qdrv_raco_s01_drift_scitem",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/c933bab5-5eec-42fe-ae83-b2c5ff91502f",
+                    "size": 1,
+                    "mass": 89,
+                    "grade": "C",
+                    "class": "Stealth",
+                    "manufacturer": {
+                        "name": "RAMP Corporation",
+                        "code": "RACO",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/RAMP+Corporation"
+                    },
+                    "type": "QuantumDrive",
+                    "sub_type": "UNDEFINED",
+                    "quantum_drive": {
+                        "quantum_fuel_requirement": 0.01666,
+                        "jump_range": "3.402823E+38",
+                        "disconnect_range": 14258,
+                        "thermal_energy_draw": {
+                            "pre_ramp_up": 337,
+                            "ramp_up": 337,
+                            "in_flight": 337,
+                            "ramp_down": 337,
+                            "post_ramp_down": 337
+                        },
+                        "modes": [
+                            {
+                                "type": "normal_jump",
+                                "drive_speed": 165000000,
+                                "cooldown_time": 12,
+                                "stage_one_accel_rate": 5000000,
+                                "stage_two_accel_rate": 11000000,
+                                "engage_speed": 1500,
+                                "interdiction_effect_time": 5,
+                                "calibration_rate": 1000,
+                                "min_calibration_requirement": 5000,
+                                "max_calibration_requirement": 10000,
+                                "calibration_process_angle_limit": 5,
+                                "calibration_warning_angle_limit": 8,
+                                "spool_up_time": 4
+                            },
+                            {
+                                "type": "spline_jump",
+                                "drive_speed": 500000,
+                                "cooldown_time": 10,
+                                "stage_one_accel_rate": 250,
+                                "stage_two_accel_rate": 50000,
+                                "engage_speed": 1500,
+                                "interdiction_effect_time": 5,
+                                "calibration_rate": 1000,
+                                "min_calibration_requirement": 5000,
+                                "max_calibration_requirement": 10000,
+                                "calibration_process_angle_limit": 5,
+                                "calibration_warning_angle_limit": 8,
+                                "spool_up_time": 4
+                            }
+                        ]
+                    },
+                    "updated_at": "2024-11-04T03:05:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                },
+                "children": [
+                    {
+                        "name": "hardpoint_jump_drive",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "jdrv_tars_s01_c_explorer",
+                        "health": 320,
+                        "type": "JumpDrive",
+                        "sub_type": "JumpDrive",
+                        "item": {
+                            "uuid": "0089dcd7-93ec-4f42-89e4-00db71d52df6",
+                            "name": "Explorer",
+                            "class_name": "jdrv_tars_s01_c_explorer",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/0089dcd7-93ec-4f42-89e4-00db71d52df6",
+                            "size": 1,
+                            "mass": 110,
+                            "grade": "C",
+                            "class": "Civilian",
+                            "manufacturer": {
+                                "name": "Tarsus",
+                                "code": "TARS",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Tarsus"
+                            },
+                            "type": "JumpDrive",
+                            "sub_type": "JumpDrive",
+                            "updated_at": "2024-11-04T01:02:42.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "hardpoint_quantum_fuel_tank",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "qtnk_aegs_sabre",
+                "health": null,
+                "type": "QuantumFuelTank",
+                "sub_type": "QuantumFuel",
+                "item": {
+                    "uuid": "cf5f8095-85f9-478d-9dd9-ef2cfa823546",
+                    "name": "Internal Tank",
+                    "class_name": "qtnk_aegs_sabre",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/cf5f8095-85f9-478d-9dd9-ef2cfa823546",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "QuantumFuelTank",
+                    "sub_type": "QuantumFuel",
+                    "fuel_tank": {
+                        "fill_rate": 10000,
+                        "drain_rate": 10000,
+                        "capacity": 612.4965
+                    },
+                    "inventory": {
+                        "width": 0,
+                        "height": 0,
+                        "length": 0,
+                        "dimension": 0,
+                        "scu": 0.7,
+                        "scu_converted": 0.7,
+                        "unit": "SCU"
+                    },
+                    "updated_at": "2024-11-04T03:09:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_radar",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "radr_grnp_s01_ecouter",
+                "health": 720,
+                "type": "Radar",
+                "sub_type": "MidRangeRadar",
+                "item": {
+                    "uuid": "b0ccd135-4424-417c-95e4-594a88d9b72f",
+                    "name": "Ecouter",
+                    "class_name": "radr_grnp_s01_ecouter",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/b0ccd135-4424-417c-95e4-594a88d9b72f",
+                    "size": 1,
+                    "mass": 120,
+                    "grade": "C",
+                    "class": "Military",
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "Radar",
+                    "sub_type": "MidRangeRadar",
+                    "updated_at": "2024-11-04T03:20:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_relay_cockpit",
+                "position": null,
+                "min_size": null,
+                "max_size": null,
+                "class_name": "relay_3slot",
+                "health": 900,
+                "type": "Relay",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "d046b6a3-84ba-4a9b-bc51-952ecb40224d",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "relay_3slot",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/d046b6a3-84ba-4a9b-bc51-952ecb40224d",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "Relay",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-04T03:23:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_scanner",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "test_scanner",
+                "health": null,
+                "type": null,
+                "sub_type": null
+            },
+            {
+                "name": "hardpoint_seat_access",
+                "position": null,
+                "min_size": 1,
+                "max_size": 4,
+                "class_name": "aegs_sabre_scitem_seataccess",
+                "health": null,
+                "type": "SeatAccess",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "9642b15d-6847-4a6d-b62a-3d9889b07531",
+                    "name": "Access",
+                    "class_name": "aegs_sabre_scitem_seataccess",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/9642b15d-6847-4a6d-b62a-3d9889b07531",
+                    "size": 1,
+                    "mass": 4,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "SeatAccess",
+                    "sub_type": "UNDEFINED",
+                    "inventory": {
+                        "width": 2,
+                        "height": 2,
+                        "length": 2,
+                        "dimension": 8,
+                        "scu": 0.65,
+                        "scu_converted": 0.65,
+                        "unit": "SCU"
+                    },
+                    "updated_at": "2024-11-03T20:07:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_seat_pilot",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "AEGS_Sabre_SCItem_Seat_Pilot",
+                "health": null,
+                "type": null,
+                "sub_type": null
+            },
+            {
+                "name": "hardpoint_selfdestruct",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "vhcl_selfdestruct_10s",
+                "health": null,
+                "type": "SelfDestruct",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "e5512d65-5462-4270-8095-212efe3fcf99",
+                    "name": "RSI Self Destruct",
+                    "class_name": "vhcl_selfdestruct_10s",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/e5512d65-5462-4270-8095-212efe3fcf99",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Roberts Space Industries",
+                        "code": "RSI",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Roberts+Space+Industries"
+                    },
+                    "type": "SelfDestruct",
+                    "sub_type": "UNDEFINED",
+                    "self_destruct": {
+                        "damage": 500,
+                        "radius": 10,
+                        "min_radius": 5,
+                        "phys_radius": 30,
+                        "min_phys_radius": 10,
+                        "time": 10
+                    },
+                    "updated_at": "2024-11-04T05:01:14.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_shield_generator_A",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "shld_asas_s01_shimmer_scitem",
+                "health": 380,
+                "type": "Shield",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "ecc8d200-548c-4de0-a60e-d1e316515170",
+                    "name": "Shimmer",
+                    "class_name": "shld_asas_s01_shimmer_scitem",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/ecc8d200-548c-4de0-a60e-d1e316515170",
+                    "size": 1,
+                    "mass": 63,
+                    "grade": "C",
+                    "class": "Stealth",
+                    "manufacturer": {
+                        "name": "Ascension Astro",
+                        "code": "ASAS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Ascension+Astro"
+                    },
+                    "type": "Shield",
+                    "sub_type": "UNDEFINED",
+                    "shield": {
+                        "max_shield_health": 1280,
+                        "max_shield_regen": 85,
+                        "decay_ratio": 0.25,
+                        "regen_delay": {
+                            "downed": 10,
+                            "damage": 5
+                        },
+                        "max_reallocation": 0,
+                        "reallocation_rate": 0
+                    },
+                    "updated_at": "2024-11-04T04:26:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_shield_generator_B",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "shld_asas_s01_shimmer_scitem",
+                "health": 380,
+                "type": "Shield",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "ecc8d200-548c-4de0-a60e-d1e316515170",
+                    "name": "Shimmer",
+                    "class_name": "shld_asas_s01_shimmer_scitem",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/ecc8d200-548c-4de0-a60e-d1e316515170",
+                    "size": 1,
+                    "mass": 63,
+                    "grade": "C",
+                    "class": "Stealth",
+                    "manufacturer": {
+                        "name": "Ascension Astro",
+                        "code": "ASAS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Ascension+Astro"
+                    },
+                    "type": "Shield",
+                    "sub_type": "UNDEFINED",
+                    "shield": {
+                        "max_shield_health": 1280,
+                        "max_shield_regen": 85,
+                        "decay_ratio": 0.25,
+                        "regen_delay": {
+                            "downed": 10,
+                            "damage": 5
+                        },
+                        "max_reallocation": 0,
+                        "reallocation_rate": 0
+                    },
+                    "updated_at": "2024-11-04T04:26:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_thruster_bottomFL",
+                "position": "bottom",
+                "min_size": 1,
+                "max_size": 2,
+                "class_name": "aegs_sabre_thruster_mav_joint_01",
+                "health": 12750,
+                "type": "ManneuverThruster",
+                "sub_type": "JointThruster",
+                "item": {
+                    "uuid": "4e53111a-5df5-486d-bb98-b1dd7e20fdde",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_mav_joint_01",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/4e53111a-5df5-486d-bb98-b1dd7e20fdde",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "ManneuverThruster",
+                    "sub_type": "JointThruster",
+                    "thruster": {
+                        "thrust_capacity": 710000,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.03125,
+                        "type": "Maneuver"
+                    },
+                    "updated_at": "2024-11-03T20:07:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_thruster_bottomFR",
+                "position": "bottom",
+                "min_size": 1,
+                "max_size": 2,
+                "class_name": "aegs_sabre_thruster_mav_joint_01",
+                "health": 12750,
+                "type": "ManneuverThruster",
+                "sub_type": "JointThruster",
+                "item": {
+                    "uuid": "4e53111a-5df5-486d-bb98-b1dd7e20fdde",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_mav_joint_01",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/4e53111a-5df5-486d-bb98-b1dd7e20fdde",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "ManneuverThruster",
+                    "sub_type": "JointThruster",
+                    "thruster": {
+                        "thrust_capacity": 710000,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.03125,
+                        "type": "Maneuver"
+                    },
+                    "updated_at": "2024-11-03T20:07:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_thruster_bottomRL",
+                "position": "bottom",
+                "min_size": 1,
+                "max_size": 2,
+                "class_name": "aegs_sabre_thruster_mav_joint_02",
+                "health": 12750,
+                "type": "ManneuverThruster",
+                "sub_type": "JointThruster",
+                "item": {
+                    "uuid": "65881bd8-69c4-4416-a47d-aa180714f0f9",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_mav_joint_02",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/65881bd8-69c4-4416-a47d-aa180714f0f9",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "ManneuverThruster",
+                    "sub_type": "JointThruster",
+                    "thruster": {
+                        "thrust_capacity": 721294.1,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.03125,
+                        "type": "Maneuver"
+                    },
+                    "updated_at": "2024-11-03T20:07:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_thruster_bottomRR",
+                "position": "bottom",
+                "min_size": 1,
+                "max_size": 2,
+                "class_name": "aegs_sabre_thruster_mav_joint_02",
+                "health": 12750,
+                "type": "ManneuverThruster",
+                "sub_type": "JointThruster",
+                "item": {
+                    "uuid": "65881bd8-69c4-4416-a47d-aa180714f0f9",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_mav_joint_02",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/65881bd8-69c4-4416-a47d-aa180714f0f9",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "ManneuverThruster",
+                    "sub_type": "JointThruster",
+                    "thruster": {
+                        "thrust_capacity": 721294.1,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.03125,
+                        "type": "Maneuver"
+                    },
+                    "updated_at": "2024-11-03T20:07:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_thruster_retro_left",
+                "position": "left",
+                "min_size": 2,
+                "max_size": 2,
+                "class_name": "aegs_sabre_thruster_retro",
+                "health": 13450,
+                "type": "ManneuverThruster",
+                "sub_type": "FixedThruster",
+                "item": {
+                    "uuid": "7bf0f682-2029-4259-ae25-7bf5e87274ba",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_retro",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/7bf0f682-2029-4259-ae25-7bf5e87274ba",
+                    "size": 2,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "ManneuverThruster",
+                    "sub_type": "FixedThruster",
+                    "thruster": {
+                        "thrust_capacity": 900000,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.03675,
+                        "type": "Retro"
+                    },
+                    "updated_at": "2024-11-03T20:08:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_thruster_retro_right",
+                "position": "right",
+                "min_size": 2,
+                "max_size": 2,
+                "class_name": "aegs_sabre_thruster_retro",
+                "health": 13450,
+                "type": "ManneuverThruster",
+                "sub_type": "FixedThruster",
+                "item": {
+                    "uuid": "7bf0f682-2029-4259-ae25-7bf5e87274ba",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_retro",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/7bf0f682-2029-4259-ae25-7bf5e87274ba",
+                    "size": 2,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "ManneuverThruster",
+                    "sub_type": "FixedThruster",
+                    "thruster": {
+                        "thrust_capacity": 900000,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.03675,
+                        "type": "Retro"
+                    },
+                    "updated_at": "2024-11-03T20:08:12.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_thruster_topFL",
+                "position": "top",
+                "min_size": 1,
+                "max_size": 2,
+                "class_name": "aegs_sabre_thruster_mav_joint_01",
+                "health": 12750,
+                "type": "ManneuverThruster",
+                "sub_type": "JointThruster",
+                "item": {
+                    "uuid": "4e53111a-5df5-486d-bb98-b1dd7e20fdde",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_mav_joint_01",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/4e53111a-5df5-486d-bb98-b1dd7e20fdde",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "ManneuverThruster",
+                    "sub_type": "JointThruster",
+                    "thruster": {
+                        "thrust_capacity": 710000,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.03125,
+                        "type": "Maneuver"
+                    },
+                    "updated_at": "2024-11-03T20:07:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_thruster_topFR",
+                "position": "top",
+                "min_size": 1,
+                "max_size": 2,
+                "class_name": "aegs_sabre_thruster_mav_joint_01",
+                "health": 12750,
+                "type": "ManneuverThruster",
+                "sub_type": "JointThruster",
+                "item": {
+                    "uuid": "4e53111a-5df5-486d-bb98-b1dd7e20fdde",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_mav_joint_01",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/4e53111a-5df5-486d-bb98-b1dd7e20fdde",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "ManneuverThruster",
+                    "sub_type": "JointThruster",
+                    "thruster": {
+                        "thrust_capacity": 710000,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.03125,
+                        "type": "Maneuver"
+                    },
+                    "updated_at": "2024-11-03T20:07:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_thruster_topRL",
+                "position": "top",
+                "min_size": 1,
+                "max_size": 2,
+                "class_name": "aegs_sabre_thruster_mav_joint_02",
+                "health": 12750,
+                "type": "ManneuverThruster",
+                "sub_type": "JointThruster",
+                "item": {
+                    "uuid": "65881bd8-69c4-4416-a47d-aa180714f0f9",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_mav_joint_02",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/65881bd8-69c4-4416-a47d-aa180714f0f9",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "ManneuverThruster",
+                    "sub_type": "JointThruster",
+                    "thruster": {
+                        "thrust_capacity": 721294.1,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.03125,
+                        "type": "Maneuver"
+                    },
+                    "updated_at": "2024-11-03T20:07:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_thruster_topRR",
+                "position": "top",
+                "min_size": 1,
+                "max_size": 2,
+                "class_name": "aegs_sabre_thruster_mav_joint_02",
+                "health": 12750,
+                "type": "ManneuverThruster",
+                "sub_type": "JointThruster",
+                "item": {
+                    "uuid": "65881bd8-69c4-4416-a47d-aa180714f0f9",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "aegs_sabre_thruster_mav_joint_02",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/65881bd8-69c4-4416-a47d-aa180714f0f9",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Aegis Dynamics",
+                        "code": "AEGS",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                    },
+                    "type": "ManneuverThruster",
+                    "sub_type": "JointThruster",
+                    "thruster": {
+                        "thrust_capacity": 721294.1,
+                        "min_health_thrust_multiplier": 0.25,
+                        "fuel_burn_per_10k_newton": 0.03125,
+                        "type": "Maneuver"
+                    },
+                    "updated_at": "2024-11-03T20:07:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_weapon_left_nose",
+                "position": "left_",
+                "min_size": 3,
+                "max_size": 3,
+                "class_name": "mount_gimbal_s3",
+                "health": 1024,
+                "type": "Turret",
+                "sub_type": "GunTurret",
+                "item": {
+                    "uuid": "8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+                    "name": "VariPuck S3 Gimbal Mount",
+                    "class_name": "mount_gimbal_s3",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+                    "size": 3,
+                    "mass": 75,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Flashfire Systems",
+                        "code": "FFSY",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Flashfire+Systems"
+                    },
+                    "type": "Turret",
+                    "sub_type": "GunTurret",
+                    "max_mounts": 1,
+                    "min_size": 2,
+                    "max_size": 3,
+                    "ports": [
+                        {
+                            "name": "hardpoint_class_2",
+                            "display_name": "Slot",
+                            "position": "HARDPOINT_CLASS_2",
+                            "sizes": {
+                                "min": 2,
+                                "max": 3
+                            },
+                            "compatible_types": [
+                                {
+                                    "type": "WeaponGun",
+                                    "sub_types": [
+                                        "Gun"
+                                    ]
+                                }
+                            ],
+                            "tags": [],
+                            "required_tags": [],
+                            "equipped_item": null
+                        }
+                    ],
+                    "updated_at": "2024-11-04T01:37:13.000000Z",
+                    "version": "3.24.2-live.9381373"
+                },
+                "children": [
+                    {
+                        "name": "hardpoint_class_2",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "klwe_laserrepeater_s3",
+                        "health": 1500,
+                        "type": "WeaponGun",
+                        "sub_type": "Gun",
+                        "item": {
+                            "uuid": "bd13235d-1261-4b71-b32f-aed1a8beb526",
+                            "name": "CF-337 Panther Repeater",
+                            "class_name": "klwe_laserrepeater_s3",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/bd13235d-1261-4b71-b32f-aed1a8beb526",
+                            "size": 3,
+                            "mass": 200,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Klaus & Werner",
+                                "code": "KLWE",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Klaus+%26+Werner"
+                            },
+                            "type": "WeaponGun",
+                            "sub_type": "Gun",
+                            "vehicle_weapon": {
+                                "class": null,
+                                "type": "Laser Repeater",
+                                "capacity": 374,
+                                "range": 2592,
+                                "damage_per_shot": 43.65,
+                                "modes": [
+                                    {
+                                        "mode": "looping",
+                                        "type": "single",
+                                        "rpm": 750,
+                                        "ammo_per_shot": 1,
+                                        "pellets_per_shot": 1,
+                                        "damage_per_second": 545.625
+                                    }
+                                ],
+                                "damages": [
+                                    {
+                                        "type": "impact",
+                                        "name": "energy",
+                                        "damage": 43.65
+                                    }
+                                ],
+                                "regeneration": {
+                                    "requested_regen_per_sec": 3031,
+                                    "requested_ammo_load": 18187,
+                                    "cooldown": 0.25,
+                                    "cost_per_bullet": 48.5
+                                },
+                                "ammunition": {
+                                    "uuid": "4573987a-bfd2-4a4d-b97a-7a613e0efd70",
+                                    "size": 3,
+                                    "lifetime": 1.44,
+                                    "speed": 1800,
+                                    "range": 2592,
+                                    "piercability": {
+                                        "damage_falloff_level_1": 0,
+                                        "damage_falloff_level_2": 0,
+                                        "damage_falloff_level_3": 0,
+                                        "max_penetration_thickness": 0.5
+                                    },
+                                    "damage_falloffs": {
+                                        "min_distance": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        },
+                                        "per_meter": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        },
+                                        "min_damage": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        }
+                                    }
+                                }
+                            },
+                            "updated_at": "2024-11-04T01:04:13.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "hardpoint_weapon_left_wing",
+                "position": "left_",
+                "min_size": 3,
+                "max_size": 3,
+                "class_name": "mount_gimbal_s3",
+                "health": 1024,
+                "type": "Turret",
+                "sub_type": "GunTurret",
+                "item": {
+                    "uuid": "8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+                    "name": "VariPuck S3 Gimbal Mount",
+                    "class_name": "mount_gimbal_s3",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+                    "size": 3,
+                    "mass": 75,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Flashfire Systems",
+                        "code": "FFSY",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Flashfire+Systems"
+                    },
+                    "type": "Turret",
+                    "sub_type": "GunTurret",
+                    "max_mounts": 1,
+                    "min_size": 2,
+                    "max_size": 3,
+                    "ports": [
+                        {
+                            "name": "hardpoint_class_2",
+                            "display_name": "Slot",
+                            "position": "HARDPOINT_CLASS_2",
+                            "sizes": {
+                                "min": 2,
+                                "max": 3
+                            },
+                            "compatible_types": [
+                                {
+                                    "type": "WeaponGun",
+                                    "sub_types": [
+                                        "Gun"
+                                    ]
+                                }
+                            ],
+                            "tags": [],
+                            "required_tags": [],
+                            "equipped_item": null
+                        }
+                    ],
+                    "updated_at": "2024-11-04T01:37:13.000000Z",
+                    "version": "3.24.2-live.9381373"
+                },
+                "children": [
+                    {
+                        "name": "hardpoint_class_2",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "klwe_laserrepeater_s3",
+                        "health": 1500,
+                        "type": "WeaponGun",
+                        "sub_type": "Gun",
+                        "item": {
+                            "uuid": "bd13235d-1261-4b71-b32f-aed1a8beb526",
+                            "name": "CF-337 Panther Repeater",
+                            "class_name": "klwe_laserrepeater_s3",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/bd13235d-1261-4b71-b32f-aed1a8beb526",
+                            "size": 3,
+                            "mass": 200,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Klaus & Werner",
+                                "code": "KLWE",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Klaus+%26+Werner"
+                            },
+                            "type": "WeaponGun",
+                            "sub_type": "Gun",
+                            "vehicle_weapon": {
+                                "class": null,
+                                "type": "Laser Repeater",
+                                "capacity": 374,
+                                "range": 2592,
+                                "damage_per_shot": 43.65,
+                                "modes": [
+                                    {
+                                        "mode": "looping",
+                                        "type": "single",
+                                        "rpm": 750,
+                                        "ammo_per_shot": 1,
+                                        "pellets_per_shot": 1,
+                                        "damage_per_second": 545.625
+                                    }
+                                ],
+                                "damages": [
+                                    {
+                                        "type": "impact",
+                                        "name": "energy",
+                                        "damage": 43.65
+                                    }
+                                ],
+                                "regeneration": {
+                                    "requested_regen_per_sec": 3031,
+                                    "requested_ammo_load": 18187,
+                                    "cooldown": 0.25,
+                                    "cost_per_bullet": 48.5
+                                },
+                                "ammunition": {
+                                    "uuid": "4573987a-bfd2-4a4d-b97a-7a613e0efd70",
+                                    "size": 3,
+                                    "lifetime": 1.44,
+                                    "speed": 1800,
+                                    "range": 2592,
+                                    "piercability": {
+                                        "damage_falloff_level_1": 0,
+                                        "damage_falloff_level_2": 0,
+                                        "damage_falloff_level_3": 0,
+                                        "max_penetration_thickness": 0.5
+                                    },
+                                    "damage_falloffs": {
+                                        "min_distance": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        },
+                                        "per_meter": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        },
+                                        "min_damage": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        }
+                                    }
+                                }
+                            },
+                            "updated_at": "2024-11-04T01:04:13.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "hardpoint_weapon_missilerack_left",
+                "position": "left",
+                "min_size": 4,
+                "max_size": 4,
+                "class_name": "mrck_s04_behr_dual_s03",
+                "health": 200,
+                "type": "MissileLauncher",
+                "sub_type": "MissileRack",
+                "item": {
+                    "uuid": "fcf0cee0-94f6-4bfb-aed3-e255d7f1e12c",
+                    "name": "MSD-423 Missile Rack",
+                    "class_name": "mrck_s04_behr_dual_s03",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/fcf0cee0-94f6-4bfb-aed3-e255d7f1e12c",
+                    "size": 4,
+                    "mass": 20,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Behring Applied Technology",
+                        "code": "BEHR",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Behring+Applied+Technology"
+                    },
+                    "type": "MissileLauncher",
+                    "sub_type": "MissileRack",
+                    "max_missiles": 2,
+                    "min_size": 3,
+                    "max_size": 3,
+                    "ports": [
+                        {
+                            "name": "missile_01_attach",
+                            "display_name": "port_NameMissileRackSlot01",
+                            "position": "MISSILE_01",
+                            "sizes": {
+                                "min": 3,
+                                "max": 3
+                            },
+                            "compatible_types": [
+                                {
+                                    "type": "Missile",
+                                    "sub_types": [
+                                        "Missile"
+                                    ]
+                                }
+                            ],
+                            "tags": [],
+                            "required_tags": [],
+                            "equipped_item": null
+                        },
+                        {
+                            "name": "missile_02_attach",
+                            "display_name": "port_NameMissileRackSlot02",
+                            "position": "MISSILE_02",
+                            "sizes": {
+                                "min": 3,
+                                "max": 3
+                            },
+                            "compatible_types": [
+                                {
+                                    "type": "Missile",
+                                    "sub_types": [
+                                        "Missile"
+                                    ]
+                                }
+                            ],
+                            "tags": [],
+                            "required_tags": [],
+                            "equipped_item": null
+                        }
+                    ],
+                    "updated_at": "2024-11-04T01:39:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                },
+                "children": [
+                    {
+                        "name": "missile_01_attach",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "misl_s03_em_fski_thunderbolt",
+                        "health": 10,
+                        "type": "Missile",
+                        "sub_type": "Missile",
+                        "item": {
+                            "uuid": "9a741b0a-200d-4f1a-92a8-f917510804e1",
+                            "name": "Thunderbolt III Missile",
+                            "class_name": "misl_s03_em_fski_thunderbolt",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/9a741b0a-200d-4f1a-92a8-f917510804e1",
+                            "size": 3,
+                            "mass": 119,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Aegis Dynamics",
+                                "code": "AEGS",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                            },
+                            "type": "Missile",
+                            "sub_type": "Missile",
+                            "missile": {
+                                "cluster_size": 1,
+                                "signal_type": "Electromagnetic",
+                                "lock_time": 1,
+                                "lock_range_max": 25000,
+                                "lock_range_min": 1500,
+                                "lock_angle": 60,
+                                "tracking_signal_min": 11.9,
+                                "speed": 857.5,
+                                "fuel_tank_size": 45,
+                                "explosion_radius_min": 20,
+                                "explosion_radius_max": 25,
+                                "damage_total": 3276.372,
+                                "damages": [
+                                    {
+                                        "type": null,
+                                        "name": "physical",
+                                        "damage": 3276.372
+                                    },
+                                    {
+                                        "type": null,
+                                        "name": "energy",
+                                        "damage": 3723.15
+                                    }
+                                ]
+                            },
+                            "updated_at": "2024-11-04T01:34:42.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    },
+                    {
+                        "name": "missile_02_attach",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "misl_s03_em_fski_thunderbolt",
+                        "health": 10,
+                        "type": "Missile",
+                        "sub_type": "Missile",
+                        "item": {
+                            "uuid": "9a741b0a-200d-4f1a-92a8-f917510804e1",
+                            "name": "Thunderbolt III Missile",
+                            "class_name": "misl_s03_em_fski_thunderbolt",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/9a741b0a-200d-4f1a-92a8-f917510804e1",
+                            "size": 3,
+                            "mass": 119,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Aegis Dynamics",
+                                "code": "AEGS",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                            },
+                            "type": "Missile",
+                            "sub_type": "Missile",
+                            "missile": {
+                                "cluster_size": 1,
+                                "signal_type": "Electromagnetic",
+                                "lock_time": 1,
+                                "lock_range_max": 25000,
+                                "lock_range_min": 1500,
+                                "lock_angle": 60,
+                                "tracking_signal_min": 11.9,
+                                "speed": 857.5,
+                                "fuel_tank_size": 45,
+                                "explosion_radius_min": 20,
+                                "explosion_radius_max": 25,
+                                "damage_total": 3276.372,
+                                "damages": [
+                                    {
+                                        "type": null,
+                                        "name": "physical",
+                                        "damage": 3276.372
+                                    },
+                                    {
+                                        "type": null,
+                                        "name": "energy",
+                                        "damage": 3723.15
+                                    }
+                                ]
+                            },
+                            "updated_at": "2024-11-04T01:34:42.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "hardpoint_weapon_missilerack_right",
+                "position": "right",
+                "min_size": 4,
+                "max_size": 4,
+                "class_name": "mrck_s04_behr_dual_s03",
+                "health": 200,
+                "type": "MissileLauncher",
+                "sub_type": "MissileRack",
+                "item": {
+                    "uuid": "fcf0cee0-94f6-4bfb-aed3-e255d7f1e12c",
+                    "name": "MSD-423 Missile Rack",
+                    "class_name": "mrck_s04_behr_dual_s03",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/fcf0cee0-94f6-4bfb-aed3-e255d7f1e12c",
+                    "size": 4,
+                    "mass": 20,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Behring Applied Technology",
+                        "code": "BEHR",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Behring+Applied+Technology"
+                    },
+                    "type": "MissileLauncher",
+                    "sub_type": "MissileRack",
+                    "max_missiles": 2,
+                    "min_size": 3,
+                    "max_size": 3,
+                    "ports": [
+                        {
+                            "name": "missile_01_attach",
+                            "display_name": "port_NameMissileRackSlot01",
+                            "position": "MISSILE_01",
+                            "sizes": {
+                                "min": 3,
+                                "max": 3
+                            },
+                            "compatible_types": [
+                                {
+                                    "type": "Missile",
+                                    "sub_types": [
+                                        "Missile"
+                                    ]
+                                }
+                            ],
+                            "tags": [],
+                            "required_tags": [],
+                            "equipped_item": null
+                        },
+                        {
+                            "name": "missile_02_attach",
+                            "display_name": "port_NameMissileRackSlot02",
+                            "position": "MISSILE_02",
+                            "sizes": {
+                                "min": 3,
+                                "max": 3
+                            },
+                            "compatible_types": [
+                                {
+                                    "type": "Missile",
+                                    "sub_types": [
+                                        "Missile"
+                                    ]
+                                }
+                            ],
+                            "tags": [],
+                            "required_tags": [],
+                            "equipped_item": null
+                        }
+                    ],
+                    "updated_at": "2024-11-04T01:39:42.000000Z",
+                    "version": "3.24.2-live.9381373"
+                },
+                "children": [
+                    {
+                        "name": "missile_01_attach",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "misl_s03_cs_fski_arrester",
+                        "health": 10,
+                        "type": "Missile",
+                        "sub_type": "Missile",
+                        "item": {
+                            "uuid": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                            "name": "Arrester III Missile",
+                            "class_name": "misl_s03_cs_fski_arrester",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/dee6efca-71ef-438c-b762-624f9ce649f3",
+                            "size": 3,
+                            "mass": 119,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Aegis Dynamics",
+                                "code": "AEGS",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                            },
+                            "type": "Missile",
+                            "sub_type": "Missile",
+                            "missile": {
+                                "cluster_size": 1,
+                                "signal_type": "Cross Section",
+                                "lock_time": 1,
+                                "lock_range_max": 25000,
+                                "lock_range_min": 1500,
+                                "lock_angle": 60,
+                                "tracking_signal_min": 10,
+                                "speed": 857.5,
+                                "fuel_tank_size": 50,
+                                "explosion_radius_min": 20,
+                                "explosion_radius_max": 25,
+                                "damage_total": 2526.42,
+                                "damages": [
+                                    {
+                                        "type": null,
+                                        "name": "physical",
+                                        "damage": 2526.42
+                                    },
+                                    {
+                                        "type": null,
+                                        "name": "energy",
+                                        "damage": 3368.56
+                                    }
+                                ]
+                            },
+                            "updated_at": "2024-11-04T01:34:42.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    },
+                    {
+                        "name": "missile_02_attach",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "misl_s03_cs_fski_arrester",
+                        "health": 10,
+                        "type": "Missile",
+                        "sub_type": "Missile",
+                        "item": {
+                            "uuid": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                            "name": "Arrester III Missile",
+                            "class_name": "misl_s03_cs_fski_arrester",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/dee6efca-71ef-438c-b762-624f9ce649f3",
+                            "size": 3,
+                            "mass": 119,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Aegis Dynamics",
+                                "code": "AEGS",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Aegis+Dynamics"
+                            },
+                            "type": "Missile",
+                            "sub_type": "Missile",
+                            "missile": {
+                                "cluster_size": 1,
+                                "signal_type": "Cross Section",
+                                "lock_time": 1,
+                                "lock_range_max": 25000,
+                                "lock_range_min": 1500,
+                                "lock_angle": 60,
+                                "tracking_signal_min": 10,
+                                "speed": 857.5,
+                                "fuel_tank_size": 50,
+                                "explosion_radius_min": 20,
+                                "explosion_radius_max": 25,
+                                "damage_total": 2526.42,
+                                "damages": [
+                                    {
+                                        "type": null,
+                                        "name": "physical",
+                                        "damage": 2526.42
+                                    },
+                                    {
+                                        "type": null,
+                                        "name": "energy",
+                                        "damage": 3368.56
+                                    }
+                                ]
+                            },
+                            "updated_at": "2024-11-04T01:34:42.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "hardpoint_weapon_rack",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "weapon_rack_aegs_sabre",
+                "health": 1000,
+                "type": "Usable",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "38925736-c3be-4d90-b014-7849d01bca23",
+                    "name": "Weapon Rack",
+                    "class_name": "weapon_rack_aegs_sabre",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/38925736-c3be-4d90-b014-7849d01bca23",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "Usable",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-04T05:05:15.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            },
+            {
+                "name": "hardpoint_weapon_regen_pool",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "weaponregenpool_s4",
+                "health": null,
+                "type": null,
+                "sub_type": null
+            },
+            {
+                "name": "hardpoint_weapon_regen_pool_turrets",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "",
+                "health": null,
+                "type": null,
+                "sub_type": null
+            },
+            {
+                "name": "hardpoint_weapon_right_nose",
+                "position": "right_",
+                "min_size": 3,
+                "max_size": 3,
+                "class_name": "mount_gimbal_s3",
+                "health": 1024,
+                "type": "Turret",
+                "sub_type": "GunTurret",
+                "item": {
+                    "uuid": "8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+                    "name": "VariPuck S3 Gimbal Mount",
+                    "class_name": "mount_gimbal_s3",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+                    "size": 3,
+                    "mass": 75,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Flashfire Systems",
+                        "code": "FFSY",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Flashfire+Systems"
+                    },
+                    "type": "Turret",
+                    "sub_type": "GunTurret",
+                    "max_mounts": 1,
+                    "min_size": 2,
+                    "max_size": 3,
+                    "ports": [
+                        {
+                            "name": "hardpoint_class_2",
+                            "display_name": "Slot",
+                            "position": "HARDPOINT_CLASS_2",
+                            "sizes": {
+                                "min": 2,
+                                "max": 3
+                            },
+                            "compatible_types": [
+                                {
+                                    "type": "WeaponGun",
+                                    "sub_types": [
+                                        "Gun"
+                                    ]
+                                }
+                            ],
+                            "tags": [],
+                            "required_tags": [],
+                            "equipped_item": null
+                        }
+                    ],
+                    "updated_at": "2024-11-04T01:37:13.000000Z",
+                    "version": "3.24.2-live.9381373"
+                },
+                "children": [
+                    {
+                        "name": "hardpoint_class_2",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "klwe_laserrepeater_s3",
+                        "health": 1500,
+                        "type": "WeaponGun",
+                        "sub_type": "Gun",
+                        "item": {
+                            "uuid": "bd13235d-1261-4b71-b32f-aed1a8beb526",
+                            "name": "CF-337 Panther Repeater",
+                            "class_name": "klwe_laserrepeater_s3",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/bd13235d-1261-4b71-b32f-aed1a8beb526",
+                            "size": 3,
+                            "mass": 200,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Klaus & Werner",
+                                "code": "KLWE",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Klaus+%26+Werner"
+                            },
+                            "type": "WeaponGun",
+                            "sub_type": "Gun",
+                            "vehicle_weapon": {
+                                "class": null,
+                                "type": "Laser Repeater",
+                                "capacity": 374,
+                                "range": 2592,
+                                "damage_per_shot": 43.65,
+                                "modes": [
+                                    {
+                                        "mode": "looping",
+                                        "type": "single",
+                                        "rpm": 750,
+                                        "ammo_per_shot": 1,
+                                        "pellets_per_shot": 1,
+                                        "damage_per_second": 545.625
+                                    }
+                                ],
+                                "damages": [
+                                    {
+                                        "type": "impact",
+                                        "name": "energy",
+                                        "damage": 43.65
+                                    }
+                                ],
+                                "regeneration": {
+                                    "requested_regen_per_sec": 3031,
+                                    "requested_ammo_load": 18187,
+                                    "cooldown": 0.25,
+                                    "cost_per_bullet": 48.5
+                                },
+                                "ammunition": {
+                                    "uuid": "4573987a-bfd2-4a4d-b97a-7a613e0efd70",
+                                    "size": 3,
+                                    "lifetime": 1.44,
+                                    "speed": 1800,
+                                    "range": 2592,
+                                    "piercability": {
+                                        "damage_falloff_level_1": 0,
+                                        "damage_falloff_level_2": 0,
+                                        "damage_falloff_level_3": 0,
+                                        "max_penetration_thickness": 0.5
+                                    },
+                                    "damage_falloffs": {
+                                        "min_distance": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        },
+                                        "per_meter": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        },
+                                        "min_damage": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        }
+                                    }
+                                }
+                            },
+                            "updated_at": "2024-11-04T01:04:13.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "hardpoint_weapon_right_wing",
+                "position": "right_",
+                "min_size": 3,
+                "max_size": 3,
+                "class_name": "mount_gimbal_s3",
+                "health": 1024,
+                "type": "Turret",
+                "sub_type": "GunTurret",
+                "item": {
+                    "uuid": "8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+                    "name": "VariPuck S3 Gimbal Mount",
+                    "class_name": "mount_gimbal_s3",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+                    "size": 3,
+                    "mass": 75,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Flashfire Systems",
+                        "code": "FFSY",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Flashfire+Systems"
+                    },
+                    "type": "Turret",
+                    "sub_type": "GunTurret",
+                    "max_mounts": 1,
+                    "min_size": 2,
+                    "max_size": 3,
+                    "ports": [
+                        {
+                            "name": "hardpoint_class_2",
+                            "display_name": "Slot",
+                            "position": "HARDPOINT_CLASS_2",
+                            "sizes": {
+                                "min": 2,
+                                "max": 3
+                            },
+                            "compatible_types": [
+                                {
+                                    "type": "WeaponGun",
+                                    "sub_types": [
+                                        "Gun"
+                                    ]
+                                }
+                            ],
+                            "tags": [],
+                            "required_tags": [],
+                            "equipped_item": null
+                        }
+                    ],
+                    "updated_at": "2024-11-04T01:37:13.000000Z",
+                    "version": "3.24.2-live.9381373"
+                },
+                "children": [
+                    {
+                        "name": "hardpoint_class_2",
+                        "position": null,
+                        "min_size": null,
+                        "max_size": null,
+                        "class_name": "klwe_laserrepeater_s3",
+                        "health": 1500,
+                        "type": "WeaponGun",
+                        "sub_type": "Gun",
+                        "item": {
+                            "uuid": "bd13235d-1261-4b71-b32f-aed1a8beb526",
+                            "name": "CF-337 Panther Repeater",
+                            "class_name": "klwe_laserrepeater_s3",
+                            "link": "https://api.star-citizen.wiki/api/v2/items/bd13235d-1261-4b71-b32f-aed1a8beb526",
+                            "size": 3,
+                            "mass": 200,
+                            "grade": null,
+                            "class": null,
+                            "manufacturer": {
+                                "name": "Klaus & Werner",
+                                "code": "KLWE",
+                                "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Klaus+%26+Werner"
+                            },
+                            "type": "WeaponGun",
+                            "sub_type": "Gun",
+                            "vehicle_weapon": {
+                                "class": null,
+                                "type": "Laser Repeater",
+                                "capacity": 374,
+                                "range": 2592,
+                                "damage_per_shot": 43.65,
+                                "modes": [
+                                    {
+                                        "mode": "looping",
+                                        "type": "single",
+                                        "rpm": 750,
+                                        "ammo_per_shot": 1,
+                                        "pellets_per_shot": 1,
+                                        "damage_per_second": 545.625
+                                    }
+                                ],
+                                "damages": [
+                                    {
+                                        "type": "impact",
+                                        "name": "energy",
+                                        "damage": 43.65
+                                    }
+                                ],
+                                "regeneration": {
+                                    "requested_regen_per_sec": 3031,
+                                    "requested_ammo_load": 18187,
+                                    "cooldown": 0.25,
+                                    "cost_per_bullet": 48.5
+                                },
+                                "ammunition": {
+                                    "uuid": "4573987a-bfd2-4a4d-b97a-7a613e0efd70",
+                                    "size": 3,
+                                    "lifetime": 1.44,
+                                    "speed": 1800,
+                                    "range": 2592,
+                                    "piercability": {
+                                        "damage_falloff_level_1": 0,
+                                        "damage_falloff_level_2": 0,
+                                        "damage_falloff_level_3": 0,
+                                        "max_penetration_thickness": 0.5
+                                    },
+                                    "damage_falloffs": {
+                                        "min_distance": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        },
+                                        "per_meter": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        },
+                                        "min_damage": {
+                                            "physical": 0,
+                                            "energy": 0,
+                                            "distortion": 0,
+                                            "thermal": 0,
+                                            "biochemical": 0,
+                                            "stun": 0
+                                        }
+                                    }
+                                }
+                            },
+                            "updated_at": "2024-11-04T01:04:13.000000Z",
+                            "version": "3.24.2-live.9381373"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "landingpad_helper",
+                "position": null,
+                "min_size": 1,
+                "max_size": 1,
+                "class_name": "default_landingsystem",
+                "health": null,
+                "type": "LandingSystem",
+                "sub_type": "UNDEFINED",
+                "item": {
+                    "uuid": "613bf1ef-7882-4e8a-9017-35e9e1af0687",
+                    "name": "\u003C= PLACEHOLDER =\u003E",
+                    "class_name": "default_landingsystem",
+                    "link": "https://api.star-citizen.wiki/api/v2/items/613bf1ef-7882-4e8a-9017-35e9e1af0687",
+                    "size": 1,
+                    "mass": 0,
+                    "grade": null,
+                    "class": null,
+                    "manufacturer": {
+                        "name": "Unknown Manufacturer",
+                        "code": "UNKN",
+                        "link": "https://api.star-citizen.wiki/api/v2/manufacturers/Unknown+Manufacturer"
+                    },
+                    "type": "LandingSystem",
+                    "sub_type": "UNDEFINED",
+                    "updated_at": "2024-11-03T22:57:13.000000Z",
+                    "version": "3.24.2-live.9381373"
+                }
+            }
+        ],
+        "shops": [
+            {
+                "uuid": "22d08e90-83ce-48d5-8590-41f508d37389",
+                "name_raw": "New Deal, Lorville",
+                "name": "New Deal",
+                "position": "Lorville",
+                "profit_margin": 50,
+                "link": "https://api.star-citizen.wiki/api/v2/shops/22d08e90-83ce-48d5-8590-41f508d37389",
+                "version": "3.19.1-LIVE.8526421",
+                "items": [
+                    {
+                        "uuid": "17276ad3-7636-40b8-969a-877a2b439b37",
+                        "name": "Aegis Sabre",
+                        "type": "Vehicle",
+                        "sub_type": "Vehicle_Spaceship",
+                        "base_price": 2183300,
+                        "price_calculated": 2183300,
+                        "price_range": {
+                            "min": 2183300,
+                            "max": 2183300
+                        },
+                        "base_price_offset": 0,
+                        "max_discount": 0,
+                        "max_premium": 0,
+                        "inventory": 100,
+                        "optimal_inventory": 100,
+                        "max_inventory": 100,
+                        "auto_restock": true,
+                        "auto_consume": false,
+                        "refresh_rate": 1,
+                        "buyable": true,
+                        "sellable": false,
+                        "rentable": false,
+                        "version": "3.19.1-LIVE.8526421"
+                    }
+                ]
+            }
+        ],
+        "parts": [
+            {
+                "name": "Nose",
+                "display_name": "Nose",
+                "damage_max": 4000,
+                "children": [
+                    {
+                        "name": "canopy",
+                        "display_name": "Canopy",
+                        "damage_max": 1000,
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Body",
+                "display_name": "Body",
+                "damage_max": 4000,
+                "children": [
+                    {
+                        "name": "bay_door_l_a",
+                        "display_name": "Bay door l a",
+                        "damage_max": 500,
+                        "children": [
+                            {
+                                "name": "bay_door_l_b",
+                                "display_name": "Bay door l b",
+                                "damage_max": 500,
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "bay_door_r_a",
+                        "display_name": "Bay door r a",
+                        "damage_max": 500,
+                        "children": [
+                            {
+                                "name": "bay_door_r_b",
+                                "display_name": "Bay door r b",
+                                "damage_max": 500,
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rear_Wing_Left",
+                        "display_name": "Wing left (rear)",
+                        "damage_max": 2000,
+                        "children": []
+                    },
+                    {
+                        "name": "Rear_Wing_Right",
+                        "display_name": "Wing right (rear)",
+                        "damage_max": 2000,
+                        "children": []
+                    },
+                    {
+                        "name": "Front_Wing_Left",
+                        "display_name": "Wing left (front)",
+                        "damage_max": 2000,
+                        "children": [
+                            {
+                                "name": "Wing_Left",
+                                "display_name": "Wing (left)",
+                                "damage_max": 2000,
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Front_Wing_Right",
+                        "display_name": "Wing right (front)",
+                        "damage_max": 2000,
+                        "children": [
+                            {
+                                "name": "Wing_Right",
+                                "display_name": "Wing (right)",
+                                "damage_max": 2000,
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "hardpoint_thruster_bottomRR",
+                        "display_name": "Hardpoint thruster rr (bottom)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_thruster_bottomRL",
+                        "display_name": "Hardpoint thruster rl (bottom)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_thruster_retro_left",
+                        "display_name": "Hardpoint thruster retro (left)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_thruster_retro_right",
+                        "display_name": "Hardpoint thruster retro (right)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_thruster_bottomFL",
+                        "display_name": "Hardpoint thruster fl (bottom)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_thruster_bottomFR",
+                        "display_name": "Hardpoint thruster fr (bottom)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_thruster_topFL",
+                        "display_name": "Hardpoint thruster fl (top)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_thruster_topFR",
+                        "display_name": "Hardpoint thruster fr (top)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_thruster_topRR",
+                        "display_name": "Hardpoint thruster rr (top)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_thruster_topRL",
+                        "display_name": "Hardpoint thruster rl (top)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_engine_left",
+                        "display_name": "Hardpoint engine (left)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_engine_right",
+                        "display_name": "Hardpoint engine (right)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_weapon_missilerack_right",
+                        "display_name": "Hardpoint weapon missilerack (right)",
+                        "damage_max": 1000,
+                        "children": []
+                    },
+                    {
+                        "name": "hardpoint_weapon_missilerack_left",
+                        "display_name": "Hardpoint weapon missilerack (left)",
+                        "damage_max": 1000,
+                        "children": []
+                    }
+                ]
+            }
+        ],
+        "updated_at": "2024-11-04T05:10:17.000000Z",
+        "version": "3.24.2-live.9381373",
+        "id": 98,
+        "chassis_id": 35,
+        "production_status": "flight-ready",
+        "production_note": "Flight Ready",
+        "size": "small",
+        "msrp": 175,
+        "pledge_url": "https://robertsspaceindustries.com/pledge/ships/sabre/Sabre",
+        "components": [
+            {
+                "type": "radar",
+                "name": "Radar",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "computers",
+                "name": "Computer",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIAvionic"
+            },
+            {
+                "type": "fuel_intakes",
+                "name": "Fuel Intake",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "fuel_tanks",
+                "name": "Fuel Tank",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "quantum_drives",
+                "name": "Quantum Drive",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "jump_modules",
+                "name": "Jump Module",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "quantum_fuel_tanks",
+                "name": "Quantum Fuel Tank",
+                "mounts": 1,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIPropulsion"
+            },
+            {
+                "type": "power_plants",
+                "name": "Power Plant",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "coolers",
+                "name": "Cooler",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "shield_generators",
+                "name": "Shield Generator",
+                "mounts": 2,
+                "component_size": "S",
+                "category": "",
+                "size": "S",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "TBD",
+                "component_class": "RSIModular"
+            },
+            {
+                "type": "weapons",
+                "name": "S3 Weapon",
+                "mounts": 4,
+                "component_size": "3",
+                "category": "",
+                "size": "3",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "missiles",
+                "name": "S3 Missiles",
+                "mounts": 2,
+                "component_size": "3",
+                "category": "",
+                "size": "4",
+                "details": "Behring MSD-423 Marsden",
+                "quantity": 2,
+                "manufacturer": "TBD",
+                "component_class": "RSIWeapon"
+            },
+            {
+                "type": "main_thrusters",
+                "name": "Main Thruster",
+                "mounts": 2,
+                "component_size": "-",
+                "category": "M",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Retro Thruster",
+                "mounts": 2,
+                "component_size": "-",
+                "category": "R",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            },
+            {
+                "type": "maneuvering_thrusters",
+                "name": "Joint Maneuvering Thrusters",
+                "mounts": 8,
+                "component_size": "-",
+                "category": "",
+                "size": "-",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIThruster"
+            }
+        ],
+        "loaner": [],
+        "skus": [
+            {
+                "title": "Warbond Edition",
+                "price": 160,
+                "available": 1,
+                "imported_at": "2024-01-09T23:00:58.000000Z"
+            },
+            {
+                "title": "Standard Edition",
+                "price": 170,
+                "available": 1,
+                "imported_at": "2024-01-09T23:00:58.000000Z"
+            },
+            {
+                "title": "Standard Edition",
+                "price": 175,
+                "available": 1,
+                "imported_at": "2024-11-23T23:00:56.000000Z"
+            }
+        ]
+    },
+    "meta": {
+        "processed_at": "2024-12-01 04:47:47",
+        "valid_relations": [
+            "shops",
+            "parts",
+            "hardpoints",
+            "components"
+        ]
+    }
+}

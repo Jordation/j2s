@@ -1,0 +1,70 @@
+{
+    "data": {
+        "id": 277,
+        "chassis_id": 115,
+        "name": "ATLS",
+        "slug": "atls",
+        "sizes": {
+            "length": 1.8,
+            "beam": 2,
+            "height": 2.8
+        },
+        "mass": 1440,
+        "cargo_capacity": null,
+        "crew": {
+            "min": 1,
+            "max": 1
+        },
+        "speed": {
+            "scm": 2,
+            "max": null
+        },
+        "agility": {
+            "pitch": null,
+            "yaw": null,
+            "roll": null,
+            "acceleration": {
+                "x_axis": null,
+                "y_axis": null,
+                "z_axis": null
+            }
+        },
+        "foci": [
+            "Industrial"
+        ],
+        "production_status": "flight-ready",
+        "production_note": "None",
+        "type": "ground",
+        "description": "Single-handedly load and unload the biggest haulers with the power of Argo. The ATLS power suit\u2019s unique exo-frame helps you work quickly, easily, and safely \u2013 whatever the task.",
+        "size": "undefined",
+        "msrp": 40,
+        "pledge_url": "https:\/\/robertsspaceindustries.com\/pledge\/ships\/atls\/ATLS",
+        "skus": [],
+        "manufacturer": {
+            "code": "ARGO",
+            "name": "Argo Astronautics"
+        },
+        "components": [
+            {
+                "type": "utility_items",
+                "name": "Tractor Beam",
+                "mounts": 1,
+                "component_size": "1",
+                "category": "",
+                "size": "1",
+                "details": "",
+                "quantity": 1,
+                "manufacturer": "",
+                "component_class": "RSIWeapon"
+            }
+        ],
+        "loaner": [],
+        "updated_at": "2024-12-05T19:00:16.000000Z"
+    },
+    "meta": {
+        "processed_at": "2024-12-24 01:52:15",
+        "valid_relations": [
+            "components"
+        ]
+    }
+}
