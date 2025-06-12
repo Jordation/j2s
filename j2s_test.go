@@ -8,8 +8,6 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
-
-	"github.com/stretchr/testify/assert"
 )
 
 func TestGoTypeBuilder(t *testing.T) {
@@ -114,36 +112,6 @@ func TestTypescriptTypeBuilder(t *testing.T) {
 
 	tw.WriteTo(outFile)
 }
-func TestGeneratedTypesUnReMarshal(t *testing.T) {
-	test_data_path := "./testdata/ship.json"
-	f, err := os.OpenFile(test_data_path, 0, os.ModeAppend)
-	assert.NoError(t, err)
-	defer f.Close()
-
-	var model Ship
-	oldBytes, err := io.ReadAll(f)
-	assert.NoError(t, err)
-
-	err = json.Unmarshal(oldBytes, &model)
-	assert.NoError(t, err)
-
-	newBytes, err := json.MarshalIndent(model, "", "  ")
-	assert.NoError(t, err)
-
-	err = os.WriteFile("testdata/ship_later.json", newBytes, 0644)
-	assert.NoError(t, err)
-
-	// var m1, m2 map[string]any
-
-	// err = json.Unmarshal(newBytes, &m1)
-	// assert.NoError(t, err)
-
-	// err = json.Unmarshal(oldBytes, &m2)
-	// assert.NoError(t, err)
-
-	// assert.Equal(t, m1, m2)
-}
-
 func TestXmlTranslator(t *testing.T) {
 	resultSets := map[string][]*setW{}
 
