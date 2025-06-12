@@ -37,7 +37,7 @@ func buildTypeRepresentations(types map[string][]*setW) []*typeIR {
 	for name, set := range outputSets {
 		typeReprs = append(typeReprs, &typeIR{
 			Name:   name,
-			Fields: set.set,
+			Fields: set.typeSet,
 		})
 	}
 
@@ -50,7 +50,7 @@ func collapse(dst map[string]*setW, typeName string, sets []*setW) ([]*setW, boo
 	}
 
 	var (
-		target = sets[0]
+		target = sets[0] // should the target be the longets set?
 		rem    = sets[1:]
 	)
 
@@ -102,9 +102,9 @@ func handleMerge(s1, s2 *setW) *setW {
 		return nil
 	case sc_Sub, sc_Partial:
 		mergeSets(s1, s2)
-		ensureBestTypes(s1.set, s1.set)
+		ensureBestTypes(s1.typeSet, s1.typeSet)
 	case sc_Eq:
-		ensureBestTypes(s1.set, s1.set)
+		ensureBestTypes(s1.typeSet, s1.typeSet)
 		// nothing to do
 	}
 

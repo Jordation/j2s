@@ -13,6 +13,7 @@ type xmlTranslator struct {
 
 // type xmlMap map[string]any
 
+// this is just a type wrapper to hold the information for an xml node (and its children)
 type xmlNode struct {
 	XMLName xml.Name
 	Attrs   []xml.Attr `xml:",any,attr"`

@@ -34,12 +34,12 @@ type setW struct {
 	ParentPath string
 	Name       string
 	Hash       string // sorted and joined values within the set, used for quick compare
-	set        set
+	typeSet    set
 }
 
 func newSetWrapper(set set, name, parentPath string) *setW {
 	setw := &setW{
-		set:        set,
+		typeSet:    set,
 		ParentPath: parentPath,
 		Name:       name,
 		Hash:       set.hash(),
@@ -50,7 +50,7 @@ func newSetWrapper(set set, name, parentPath string) *setW {
 
 func (sw *setW) MarshalJSON() ([]byte, error) {
 	start := []byte(fmt.Sprintf("{\"Path\":\"%s\",\"Set\": ", sw.ParentPath))
-	other, err := json.Marshal(sw.set)
+	other, err := json.Marshal(sw.typeSet)
 	if err != nil {
 		return nil, err
 	}
@@ -73,11 +73,13 @@ func reduce(sets []*setW) []*setW {
 
 func classify(base, classifiee *setW) setClassficiation {
 	// if they live at the same path and have the same name, assume they are at least merge-worthy
-	bs := strings.Split(base.ParentPath, ".")
-	cs := strings.Split(classifiee.ParentPath, ".")
-	// the second last path, AKA the parent
-	if len(bs) > 1 && len(cs) > 1 {
-		if bs[len(bs)-2] == cs[len(cs)-2] {
+	basePaths := strings.Split(base.ParentPath, ".")
+	classifieePaths := strings.Split(classifiee.ParentPath, ".")
+	// this looks fuckey
+	// if the parent path (type name) on both sets are the same,
+	// we can easily say it is the same type and at least partically equal
+	if len(basePaths) > 1 && len(classifieePaths) > 1 {
+		if basePaths[len(basePaths)-2] == classifieePaths[len(classifieePaths)-2] {
 			return sc_Partial
 		}
 	}
@@ -96,9 +98,11 @@ func classify(base, classifiee *setW) setClassficiation {
 		return sc_Sub
 	}
 
+	// this is the main gamble and where maybe edge case breaks smth
+	// we assume that if the mismatch count each way is < half the total set size
 	// some keys are missing on each side but there is a majority overlap
-	if baseDiff < len(base.set)/2 &&
-		classDiff < len(classifiee.set)/2 {
+	if baseDiff < len(base.typeSet)/2 &&
+		classDiff < len(classifiee.typeSet)/2 {
 		return sc_Partial
 	}
 
@@ -109,8 +113,8 @@ func classify(base, classifiee *setW) setClassficiation {
 func (s1 *setW) Difference(s2 *setW) int {
 	diff := 0
 
-	for k := range s1.set {
-		if _, ok := s2.set[k]; !ok {
+	for k := range s1.typeSet {
+		if _, ok := s2.typeSet[k]; !ok {
 			diff++
 		}
 	}
@@ -134,8 +138,8 @@ func (s1 *setW) Eq(s2 *setW) bool {
 
 func mergeSets(s1, s2 *setW) {
 
-	maps.Copy(s1.set, s2.set)
-	maps.Copy(s2.set, s1.set)
+	maps.Copy(s1.typeSet, s2.typeSet)
+	maps.Copy(s2.typeSet, s1.typeSet)
 }
 
 type valueType struct {
