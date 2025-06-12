@@ -1,3 +1,6 @@
 .vscode
-*/**.json
+*.json
+*.xml
 testdata
+old
+output.*

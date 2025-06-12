@@ -106,11 +106,11 @@ func classify(base, classifiee *setW) setClassficiation {
 	return sc_NotEq
 }
 
-func (self *setW) Difference(other *setW) int {
+func (s1 *setW) Difference(s2 *setW) int {
 	diff := 0
 
-	for k := range self.set {
-		if _, ok := other.set[k]; !ok {
+	for k := range s1.set {
+		if _, ok := s2.set[k]; !ok {
 			diff++
 		}
 	}
@@ -190,7 +190,23 @@ func (vt *valueType) String() string {
 	return "unknown"
 }
 
-func jsonValueType(val any) (valueTypePart, valueTypePart, error) {
+func guessXmlVt(val string) valueTypePart {
+	vt := vt_number
+	isNumber := func(r rune) bool {
+		return r >= '0' && r <= '9' || r == '.'
+	}
+
+	for _, r := range val {
+		if !isNumber(r) {
+			vt = vt_string
+			break
+		}
+	}
+
+	return vt
+}
+
+func toValueType(val any) (valueTypePart, valueTypePart, error) {
 	switch data := val.(type) {
 	case string:
 		return vt_string, 0, nil
@@ -223,6 +239,34 @@ func jsonValueType(val any) (valueTypePart, valueTypePart, error) {
 	}
 
 	return -1, -1, errors.New("invalid type")
+}
+
+func nodeToValueType(node *xmlNode) *valueType {
+	vt := &valueType{}
+
+	if len(node.Nodes) == 0 && len(node.Attrs) > 0 {
+		// we only have attrs, simple object
+		vt.base = vt_object
+		vt.typedName = node.XMLName.Local
+	}
+	if len(node.Nodes) > 0 {
+		allSame := true
+		commonName := node.Nodes[0].XMLName.Local
+
+		for _, child := range node.Nodes {
+			if child.XMLName.Local != commonName {
+				allSame = false
+				break
+			}
+		}
+
+		if allSame {
+			vt.base = vt_array
+			vt.sub = nodeToValueType(node.Nodes[0]).base
+		}
+	}
+
+	return vt
 }
 
 func (vt *valueType) MarshalJSON() ([]byte, error) {

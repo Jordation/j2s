@@ -54,7 +54,7 @@ func (jt *jsonTranslator) buildKeySets(
 	}
 
 	for fieldName, val := range currObj {
-		base, sub, err := jsonValueType(val)
+		base, sub, err := toValueType(val)
 		if err != nil {
 			panic(err)
 		}

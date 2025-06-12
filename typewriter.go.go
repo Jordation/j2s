@@ -1,52 +1,42 @@
 package j2s
 
 import (
-	"fmt"
 	"io"
 	"strings"
 )
 
-type typeWriter struct {
-	types []*typeRepr
+type fmtFunc func(string) string
+type fieldNameAndTypeFmtFunc func(*valueType, fmtFunc) string
+
+type goTypeWriter struct {
+	ir []*typeIR
 }
 
-func NewTypeWriter(
-	ir map[string][]*setW,
-) *typeWriter {
-
-	t := &typeWriter{
-		types: buildTypeRepresentations(ir),
+func NewGoTypeWriter(
+	setsOfTypes map[string][]*setW,
+) *goTypeWriter {
+	t := &goTypeWriter{
+		ir: buildTypeRepresentations(setsOfTypes),
 	}
 
 	return t
 }
 
-func (tw *typeWriter) WriteTo(w io.Writer) (int64, error) {
-	fileHead, fileTail := goFileWrap("")
+func (tw *goTypeWriter) WriteTo(w io.Writer) (int64, error) {
+	fileHead, fileTail := goFileWrap()
 	w.Write([]byte(fileHead))
-	for _, t := range tw.types {
+	for _, t := range tw.ir {
 		sb := strings.Builder{}
 		typeHead, typeTail := goTypeWrap(goRenamer(t.Name))
 
 		sb.WriteString(typeHead)
-		t.format(&sb)
+		t.format(&sb, goRenamer, goTypeFormatter)
 		sb.WriteString(typeTail)
 		w.Write([]byte(sb.String()))
 	}
 
 	w.Write([]byte(fileTail))
 	return 0, nil
-}
-
-type typeRepr struct {
-	Name   string
-	Fields map[string]*valueType
-}
-
-func (tr *typeRepr) format(sb *strings.Builder) {
-	for fieldName, fieldType := range tr.Fields {
-		sb.WriteString(fmt.Sprintf("%s %s `json:\"%s\"`\n", goRenamer(fieldName), goTypeFormatter(fieldType, goRenamer), fieldName))
-	}
 }
 
 func goRenamer(in string) string {
@@ -62,11 +52,11 @@ func goTypeWrap(typeName string) (string, string) {
 	return "type " + typeName + " struct {\n", "}\n\n"
 }
 
-func goFileWrap(string) (string, string) {
-	return "package main\n\n", "\n"
+func goFileWrap() (string, string) {
+	return "package j2s\n\n", "\n"
 }
 
-func goTypeFormatter(vt *valueType, nameTransformer func(string) string) string {
+func goTypeFormatter(vt *valueType, nameTransformer fmtFunc) string {
 	switch vt.base {
 	default:
 		panic("unknown type repr " + vt.String())

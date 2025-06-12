@@ -1,8 +1,27 @@
 package j2s
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
-func buildTypeRepresentations(types map[string][]*setW) []*typeRepr {
+type typeIR struct {
+	Name   string
+	Fields map[string]*valueType
+}
+
+func (tr *typeIR) format(sb *strings.Builder, fieldNameFormatter fmtFunc, typeFormatter fieldNameAndTypeFmtFunc) {
+	for fieldName, fieldType := range tr.Fields {
+		sb.WriteString(fmt.Sprintf(
+			"%s %s `json:\"%s\"`\n",
+			fieldNameFormatter(fieldName),
+			typeFormatter(fieldType, fieldNameFormatter),
+			fieldName,
+		))
+	}
+}
+
+func buildTypeRepresentations(types map[string][]*setW) []*typeIR {
 	outputSets := make(map[string]*setW, len(types))
 	for typeName, fieldSets := range types {
 		cont := true
@@ -14,9 +33,9 @@ func buildTypeRepresentations(types map[string][]*setW) []*typeRepr {
 		}
 	}
 
-	typeReprs := make([]*typeRepr, 0, len(outputSets))
+	typeReprs := make([]*typeIR, 0, len(outputSets))
 	for name, set := range outputSets {
-		typeReprs = append(typeReprs, &typeRepr{
+		typeReprs = append(typeReprs, &typeIR{
 			Name:   name,
 			Fields: set.set,
 		})
