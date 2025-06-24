@@ -6,7 +6,6 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Jordation/j2s"
 	"github.com/sirupsen/logrus"
 )
 
@@ -38,9 +37,7 @@ func main() {
 			Fatalf("failed to get src file @ %s", srcPath)
 	}
 
-	setsOfTypes, err := j2s.
-		NewTranslator(rootTypeName, srcFile).
-		Translate()
+	setsOfTypes, err := NewTranslator(rootTypeName, srcFile).Translate()
 
 	if err != nil {
 		logrus.WithError(err).Fatal("failed to build sets")
@@ -52,9 +49,9 @@ func main() {
 	for _, t := range strings.Split(lang, ",") {
 		switch t {
 		case "go":
-			typeWriters["go"] = j2s.NewGoTypeWriter(setsOfTypes)
+			typeWriters["go"] = NewGoTypeWriter(setsOfTypes)
 		case "ts":
-			typeWriters["ts"] = j2s.NewTsTypeWriter(setsOfTypes)
+			typeWriters["ts"] = NewTsTypeWriter(setsOfTypes)
 		}
 	}
 

@@ -1,4 +1,4 @@
-package j2s
+package main
 
 import (
 	"io"
@@ -53,7 +53,7 @@ func goTypeWrap(typeName string) (string, string) {
 }
 
 func goFileWrap() (string, string) {
-	return "package j2s\n\n", "\n"
+	return "package main\n\n", "\n"
 }
 
 func goTypeFormatter(vt *valueType, nameTransformer fmtFunc) string {

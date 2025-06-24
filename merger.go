@@ -1,4 +1,4 @@
-package j2s
+package main
 
 import (
 	"fmt"
