@@ -6,7 +6,7 @@ Takes considerations for partial representations found across the input and the 
 # Usage
 
 ```shell
-go install github.com/Jordation/j2s
+go install github.com/Jordation/j2s@latest
 ```
 
 ```shell
