@@ -136,9 +136,9 @@ func handleMerge(s1, s2 *setW) *setW {
 		return nil
 	case sc_Sub, sc_Partial:
 		mergeSets(s1, s2)
-		ensureBestTypes(s1.typeSet, s1.typeSet)
+		ensureBestTypes(s1.typeSet, s2.typeSet)
 	case sc_Eq:
-		ensureBestTypes(s1.typeSet, s1.typeSet)
+		ensureBestTypes(s1.typeSet, s2.typeSet)
 		// nothing to do
 	}
 
@@ -162,7 +162,7 @@ func ensureBestTypes(s1, s2 set) {
 }
 
 func bestType(vt1, vt2 *valueType) *valueType {
-	if vt1.base == vt_number && vt2.base == vt_number {
+	if vt1.base == vt_number || vt2.base == vt_number {
 		// float for one is float for all
 		if vt1.sub == vt_float || vt2.sub == vt_float {
 			return &valueType{

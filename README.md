@@ -9,6 +9,14 @@ Takes considerations for partial representations found across the input and the 
 go install github.com/Jordation/j2s@latest
 ```
 
-```shell
-js2 -i=<source file path> -o=<output file name> -l=<languages (go, ts)>, -tn=<name of the root type. Optional>
+```
+$ j2s
+      -i string
+            the input json or xml file to build the type from
+      -l string
+            the output (l)anguages you want to generate types for (default "go")
+      -o string
+            the output file for the generated types (default "output.go")
+      -tn string
+            what the (t)ype(n)ame for the top level datatype should be called (default "Unnamed") 
 ```
