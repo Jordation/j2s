@@ -14,7 +14,7 @@ var (
 )
 
 func init() {
-	flag.StringVar(&rootTypeName, "tn", "Unnamed", "what the (t)ype(n)ame for the top level datatype should be called")
+	flag.StringVar(&rootTypeName, "tn", "Root", "what the (t)ype(n)ame for the top level datatype should be called")
 
 	flag.StringVar(&srcPath, "i", "", "the input json or xml file to build the type from")
 
@@ -38,7 +38,6 @@ func main() {
 	}
 
 	setsOfTypes, err := NewTranslator(rootTypeName, srcFile).Translate()
-
 	if err != nil {
 		logrus.WithError(err).Fatal("failed to build sets")
 	}

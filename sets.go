@@ -155,6 +155,8 @@ const (
 
 	vt_string
 	vt_number
+	vt_int
+	vt_float
 	vt_bool
 	vt_null
 
@@ -210,12 +212,22 @@ func guessXmlVt(val string) valueTypePart {
 	return vt
 }
 
+func getNumberType(val float64) valueTypePart {
+	asStr := fmt.Sprintf("%v", val)
+	if strings.Contains(asStr, ".") {
+		return vt_float
+	} else {
+		return vt_int
+	}
+}
+
 func toValueType(val any) (valueTypePart, valueTypePart, error) {
 	switch data := val.(type) {
 	case string:
 		return vt_string, 0, nil
 	case float64:
-		return vt_number, 0, nil
+		sub := getNumberType(val.(float64))
+		return vt_number, sub, nil
 	case bool:
 		return vt_bool, 0, nil
 	case nil:
@@ -230,7 +242,8 @@ func toValueType(val any) (valueTypePart, valueTypePart, error) {
 		case string:
 			return vt_array, vt_string, nil
 		case float64:
-			return vt_array, vt_number, nil
+			sub := getNumberType(val.(float64))
+			return vt_array, sub, nil
 		case map[string]any:
 			return vt_array, vt_object, nil
 		case bool:

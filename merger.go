@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"slices"
 	"strings"
 )
 
@@ -13,7 +14,7 @@ type typeIR struct {
 func (tr *typeIR) format(sb *strings.Builder, fieldNameFormatter fmtFunc, typeFormatter fieldNameAndTypeFmtFunc) {
 	for fieldName, fieldType := range tr.Fields {
 		sb.WriteString(fmt.Sprintf(
-			"%s %s `json:\"%s\"`\n",
+			"\t%s %s `json:\"%s\"`\n",
 			fieldNameFormatter(fieldName),
 			typeFormatter(fieldType, fieldNameFormatter),
 			fieldName,
@@ -41,6 +42,17 @@ func buildTypeRepresentations(types map[string][]*setW) []*typeIR {
 		})
 	}
 
+	slices.SortFunc(typeReprs, func(l, r *typeIR) int {
+		if l.Name < r.Name {
+			return -1
+		}
+		if l.Name > r.Name {
+			return 1
+		}
+
+		return 0
+	})
+
 	return typeReprs
 }
 
@@ -50,9 +62,31 @@ func collapse(dst map[string]*setW, typeName string, sets []*setW) ([]*setW, boo
 	}
 
 	var (
-		target = sets[0] // should the target be the longets set?
-		rem    = sets[1:]
+		target *setW
+		rem    []*setW
 	)
+
+	// var (
+	// 	target = sets[0]
+	// 	rem    = sets[1:]
+	// )
+
+	maxLen := 0
+	maxLenInd := 0
+	for i, set := range sets {
+		if len(set.typeSet) > maxLen {
+			maxLen = len(set.typeSet)
+			maxLenInd = i
+		}
+	}
+
+	for i, set := range sets {
+		if i == maxLenInd {
+			target = set
+			continue
+		}
+		rem = append(rem, set)
+	}
 
 	offset := 0
 	for i, set := range rem {
@@ -128,6 +162,21 @@ func ensureBestTypes(s1, s2 set) {
 }
 
 func bestType(vt1, vt2 *valueType) *valueType {
+	if vt1.base == vt_number && vt2.base == vt_number {
+		// float for one is float for all
+		if vt1.sub == vt_float || vt2.sub == vt_float {
+			return &valueType{
+				base: vt_number,
+				sub:  vt_float,
+			}
+		} else {
+			return &valueType{
+				base: vt_number,
+				sub:  vt_int,
+			}
+		}
+	}
+
 	if vt1.sub == vt_unknown && vt2.sub != vt_unknown {
 		return vt2
 	} else if vt1.sub != vt_unknown && vt2.sub == vt_unknown {

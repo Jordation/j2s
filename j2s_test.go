@@ -8,6 +8,9 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
+
+	"github.com/sirupsen/logrus"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestGoTypeBuilder(t *testing.T) {
@@ -35,9 +38,7 @@ func TestGoTypeBuilder(t *testing.T) {
 			}
 			merged = append(merged, sets...)
 			bigSet[k] = merged
-
 		}
-
 	}
 
 	for k, sets := range bigSet {
@@ -217,5 +218,41 @@ func writeJson(path string, data any) {
 
 	if err = os.WriteFile(path, jsonBytes, 0644); err != nil {
 		panic(err)
+	}
+}
+
+func TestGoWriter(t *testing.T) {
+	tests := []struct {
+		input, output string
+	}{
+		{
+			input:  "samples/inputs/mlbsummary.json",
+			output: "samples/outputs/mlbsummary.go",
+		},
+	}
+
+	for _, test := range tests {
+		t.Run(test.input, func(t *testing.T) {
+			srcFile, err := os.OpenFile(test.input, 0, 0644)
+			assert.NoError(t, err)
+
+			defer srcFile.Close()
+
+			setsOfTypes, err := NewTranslator(rootTypeName, srcFile).Translate()
+			if err != nil {
+				logrus.WithError(err).Fatal("failed to build sets")
+			}
+
+			tw := NewGoTypeWriter(setsOfTypes)
+
+			outputFile, err := os.OpenFile(test.output, os.O_CREATE|os.O_RDWR, 0644)
+			assert.NoError(t, err)
+			defer outputFile.Close()
+
+			outputFile.Truncate(0)
+
+			_, err = tw.WriteTo(outputFile)
+			assert.NoError(t, err)
+		})
 	}
 }

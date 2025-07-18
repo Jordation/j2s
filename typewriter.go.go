@@ -63,13 +63,16 @@ func goTypeFormatter(vt *valueType, nameTransformer fmtFunc) string {
 	case vt_string:
 		return "string"
 	case vt_number:
+		if vt.sub == vt_int {
+			return "int"
+		}
 		return "float64"
 	case vt_bool:
 		return "bool"
 	case vt_null:
 		return "any"
 	case vt_object:
-		return nameTransformer(vt.typedName)
+		return "*" + nameTransformer(vt.typedName)
 
 	case vt_array:
 		switch vt.sub {
@@ -77,7 +80,9 @@ func goTypeFormatter(vt *valueType, nameTransformer fmtFunc) string {
 			panic("unknown type repr " + vt.String())
 		case vt_string:
 			return "[]string"
-		case vt_number:
+		case vt_int:
+			return "[]int"
+		case vt_float:
 			return "[]float64"
 		case vt_bool:
 			return "[]bool"
